@@ -13,50 +13,10 @@ Cosmetic | :lipstick: `:lipstick:`
 Adjustment | :wrench: `:wrench:`
 Tests | :rotating_light: `:rotating_light:`
 
-## Maquetas:
+## Canvas Grid:
 
-Login: http://testbed.raidho.mx/canvas/login.html
+EXO http://testbed.raidho.mx/canvas2/canvas-exo.html
 
-Sign Up: http://testbed.raidho.mx/canvas/sign-up.html
+LEAN http://testbed.raidho.mx/canvas2/canvas-lean.html
 
-Add hypothesis (Provisional): http://testbed.raidho.mx/canvas/pop-ups.html
-
-Canvas Grid http://testbed.raidho.mx/canvas/dashboard.html
-
-### Interview
-
-Interview Full View: http://testbed.raidho.mx/canvas/interview-full.html
-
-Interview Empty View: http://testbed.raidho.mx/canvas/interview-empty.html
-
-Tooltip Alert Types: http://testbed.raidho.mx/canvas/alert-types.html
-
-### Cohorts
-
-All Cohorts empty view: http://testbed.raidho.mx/canvas/cohort-empty.html
-
-All Cohorts full view: http://testbed.raidho.mx/canvas/cohort-full.html
-
-Cohort Projects empty view: http://testbed.raidho.mx/canvas/cohort-project-empty.html
-
-Cohort Projects Full view: http://testbed.raidho.mx/canvas/cohort-project-full.html
-
-### Profile
-
-Profile Full view: http://testbed.raidho.mx/canvas/profile-full.html
-
-Profile Empty view: http://testbed.raidho.mx/canvas/profile-empty.html
-
-### Users Recent Activity
-
-Recent Activity view: http://testbed.raidho.mx/canvas/recent-activity.html
-
-### Canvas Grid (Mentor)
-
-Canvas Mentor view: http://testbed.raidho.mx/canvas/canvas-mentor.html
-
-### Project View (Mentor)
-
-Project single full view: http://testbed.raidho.mx/canvas/project-single-view.html
-
-Project single empty view: http://testbed.raidho.mx/canvas/project-single-view-empty.html
+MISSION http://testbed.raidho.mx/canvas2/canvas-mission.html
