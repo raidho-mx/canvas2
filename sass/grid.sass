@@ -1,0 +1,259 @@
+/*GRID*/
+
+section
+	display: inline-block
+	position: relative
+	width: 100%
+
+=padding-wrap
+	padding-left: 5%
+	padding-right: 5%
+	@media (min-width: $large_b)
+		padding-left: 10%
+		padding-right: 10%
+
+.wrap
+	margin: 0 auto
+	max-width: 1100px
+	position: relative
+	width: 90%
+	@media (min-width: $large_b)
+		width: 80%
+	@media (max-width: $tablet_b)
+		width: 90%
+
+.fix-wrap
+	margin: 0 auto
+	width: 1100px
+	position: relative
+
+=wrap
+	margin: 0 auto
+	width: 90%
+	@media (min-width: $large_b)
+		width: 80%
+	@media (max-width: $tablet_b)
+		width: 90%
+
+.mtb50
+	margin: 1.25em 0
+	@media (min-width: $tablet_b)
+		margin: 3.125em 0
+
+.mtb20
+	margin: 1.25em 0
+
+.mb20
+	margin-bottom: 1.25em
+
+.mb30
+	margin-bottom: 2em
+
+.mb50
+	margin-bottom: 1.25em
+	@media (min-width: $tablet_b)
+		margin-bottom: 3.125em
+
+.mb40
+	margin-bottom: 1.25em
+	@media (min-width: $tablet_b)
+		margin-bottom: 2.5em
+
+.mt10
+	margin-top: 10px
+
+.mb10
+	margin-bottom: 10px
+
+.mtb10
+	margin: 10px 0
+
+.mr10
+	margin-right: 10px
+
+.m-right
+	margin-right: 1em
+
+.p24
+	padding: 1.5em
+
+.pl20
+	padding-left: 20px
+
+.ptb
+	padding: 16px 0
+
+.ptrl24
+	padding: 1.5em 1.5em 0 1.5em
+
+.plr24
+	padding: 0 1.5em
+
+.m24
+	margin: 1.5em
+
+.mtb100
+	margin: 3.125em 0
+	@media (min-width: $tablet_b)
+		margin: 6.25em 0
+
+.mb100
+	margin-bottom: 3.125em
+	@media (min-width: $tablet_b)
+		margin-bottom: 6.25em
+
+.ptb100
+	padding: 3.125em 0
+	@media (min-width: $tablet_b)
+		padding: 6.25em 0
+
+.pb100
+	padding-bottom: 3.125em
+	@media (min-width: $tablet_b)
+		padding-bottom: 6.25em
+
+.pr70
+	padding-right: 4.5em
+
+// GRID
+// 1/1
+.one-col
+	float: left
+	position: relative
+	width: 100%
+
+// 1/4
+.one-fourth
+	display: inline-block
+	position: relative
+	vertical-align: top
+	width: 100%
+	@media (min-width: $tablet_b)
+		width: 25%
+		padding-bottom: 2.5em
+
+// 3/4
+.one-three-col
+	display: inline-block
+	position: relative
+	vertical-align: top
+	width: 100%
+	@media (min-width: $tablet_b)
+		width: 33%
+
+.three-col
+	display: inline-block
+	position: relative
+	vertical-align: top
+	width: 100%
+	@media (min-width: $tablet_b)
+		width: 66%
+
+// 1/2
+.two-col
+	float: left
+	position: relative
+	vertical-align: top
+	width: 100%
+	@media (min-width: $tablet_b)
+		width: 50%
+
+// 1/3
+.third-col
+	position: relative
+	width: 100%
+	@media (min-width: $tablet_b)
+		width: 33%
+
+// 1/3
+.one-third
+	display: inline-block
+	position: relative
+	vertical-align: top
+	width: 100%
+	@media (min-width: $tablet_b)
+		width: 32%
+
+// NON RESPONSIVE COLUMNS
+// 1/2
+.half-col
+	float: left
+	position: relative
+	vertical-align: top
+	width: 50%
+
+// 1/3
+.one-third-col
+	float: left
+	position: relative
+	vertical-align: top
+	width: 33.33%
+
+// 2/3
+.two-third-col
+	float: left
+	position: relative
+	vertical-align: top
+	width: 66.66%
+
+// ODD VARIATIONS
+.odd-fourth-col
+	position: relative
+	display: inline-block
+	vertical-align: top
+	width: 100%
+	@media (min-width: 930px)
+		width: 15%
+	@media (min-width: 1100px)
+		width: 20%
+	@media (min-width: 1225px)
+		width: 22%
+
+.odd-half-col
+	position: relative
+	vertical-align: top
+	width: 57%
+
+.odd-third-col
+	position: relative
+	vertical-align: top
+	width: 43%
+
+.short-half-col
+	display: inline-block
+	width: 100%
+	@media (min-width: $tablet_b)
+		width: 40%
+
+
+.right-gutter
+	padding-right: 1.25em
+
+.columns
+	@media (max-width: $tablet_b)
+		padding-bottom: 1.25em
+	@media (min-width: $tablet_b)
+		padding-right: 1.25em
+
+.column-p70
+	@media (max-width: $tablet_b)
+		padding-right: 0
+		padding-bottom: 1.25em
+	@media (min-width: $tablet_b)
+		padding-right: 4.375em
+
+//DIRTY JACKS
+.mobile
+	display: inline-block
+	@media (min-width: $tablet_b)
+		display: none
+
+.c-center
+	margin: 0 auto
+	display: block
+
+.t-center
+	text-align: center
+
+.v-bottom
+	vertical-align: bottom

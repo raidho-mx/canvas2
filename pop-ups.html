@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/chat.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Serif:400,700" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+
+<!-- ADD HYPOTHESIS SINGLE MODAL -->
+<div class="one-col mb50">
+	<div class="add-hypothesis">
+		<button class="bg-white-close-btn"></button>
+		<div class="one-col bg-cyan p24 c-white pr70">
+			<h3 class="serif c-white mb20">New Hypothesis</h3>
+			<input type="text" placeholder="Write a short hypotesis">
+		</div>
+		<div class="one-col bg-white p24">
+			<div class="one-col">
+				<div class="two-col mb20">
+					<label class="c-dark-purple bold-serif">Canvas Area</label>
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col">
+				<div class="two-col columns">
+					<div class="mb20">
+						<label class="c-dark-purple bold-serif">Color Tags</label>
+						<input class="input-x1 bg-light-blue" type="text" placeholder="Money, Admin, …">
+					</div>
+				</div>
+				<div class="two-col">
+					<ul class="color-picker-list">
+						<li><button class="bg-orange"></button></li>
+						<li><button class="bg-purple"></button></li>
+						<li><button class="bg-red"></button></li>
+						<li><button class="bg-green"></button></li>
+						<li><button class="bg-blue"></button></li>
+						<li><button class="bg-yellow"></button></li>
+						<li><button class="bg-light-blue"></button></li>
+						<li><button class="bg-soft-green"></button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="one-col">
+				<div class="two-col">
+					<button class="blue-btn">Save Hypotesis</button>
+				</div>
+				<div class="two-col">
+					<button class="dark-purple-opacity-btn p-btn">Discard Hypotesis</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- NEW HYPOTHESIS MODAL -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="half-col">
+			<div class="one-col p24 mb20">
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col">
+					<select class="input-x1">
+						<option value="first">Week 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col p24">
+				<div class="new-hypotesis-modal">
+					<button class="gray-close-btn"></button>
+					<div class="one-col right-gutter">
+						<div class="mb20">
+							<label class="c-dark-purple bold-sans-serif">New Hypothesis</label>
+							<input class="input-x1" type="text" placeholder="Write a short hypothesis">
+						</div>
+					</div>
+					<div class="one-col mb20">
+						<div class="half-col right-gutter">
+							<div class="mb20">
+								<label class="c-dark-purple bold-sans-serif">Color Tags</label>
+								<input class="input-x1 bg-light-blue" type="text" placeholder="Money, Admin, …">
+							</div>
+						</div>
+						<div class="half-col">
+							<ul class="color-picker-list">
+								<li><button class="bg-orange"></button></li>
+								<li><button class="bg-purple"></button></li>
+								<li><button class="bg-red"></button></li>
+								<li><button class="bg-green"></button></li>
+								<li><button class="bg-blue"></button></li>
+								<li><button class="bg-yellow"></button></li>
+								<li><button class="bg-light-blue"></button></li>
+								<li><button class="bg-soft-green"></button></li>
+							</ul>
+						</div>
+					</div>
+					<button class="gray-border-btn c-center">Save Hypotesis</button>
+				</div>
+			</div>
+			<button class="dark-purple-opacity-btn f-left p24 txt14">View valid hypothesis</button>
+		</div>
+		<div class="half-col bg-green">
+			<div class="one-col p24 mb20">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn">Key Insights</button></li>
+					<li><button class="white-border-small-btn">Deep Dive</button></li>
+					<li><button class="white-border-small-btn chat-btn">12</button></li>
+					<li><button class="white-border-small-btn">Help</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- NEW HYPOTHESIS MODAL -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="half-col">
+			<div class="one-col p24">
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col">
+					<select class="input-x1">
+						<option value="first">Week 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col ptrl24">
+				<div class="hypothesis-wrap scroll-content">
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Improves Pet’s Health</p><p class="c-green txt12">Valid by 1 Insight</p>
+					</button>
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Comfort & Time Saver</p><p class="c-dark-purple-opacity txt12">Not yet Valid</p>
+					</button>
+					<button class="dashed-gray-btn c-cyan mb20"> <div class="bg-blue-add-btn m-right">+</div>Add New Hypothesis</button>
+				</div>
+			</div>
+			<button class="dark-purple-opacity-btn f-left p24 txt14">View valid hypothesis</button>
+		</div>
+		<div class="half-col bg-green">
+			<div class="one-col p24">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn active">Key Insights</button></li>
+					<li><button class="white-border-small-btn">Deep Dive</button></li>
+					<li><button class="white-border-small-btn chat-btn">12</button></li>
+					<li><button class="white-border-small-btn">Help</button></li>
+				</ul>
+			</div>
+			<div class="one-col ptrl24 mb20">
+				<div class="hypothesis-specs scroll-content">
+					<div class="specs-wrap">
+						<div class="hypothesis-comment mb20">
+							<div class="status">
+								<button class="small-rounded-btn bg-green">must</button>
+							</div>
+							<div class="message">
+								<p class="c-dark-purple"><strong>“Clients value their pet’s health the most”</strong></p>
+								<div class="author">
+									<div class="profile" style="background-image: url('img/profile1.png');"></div>
+									<p class="txt12">Found by <strong>Jessica</strong> from the interview with <strong>Inés Cruz</strong> on <strong>Jan 31, 2017</strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="hypothesis-comment mb20">
+							<div class="status">
+								<button class="small-rounded-btn bg-green inactive">nice</button>
+							</div>
+							<div class="message">
+								<p class="c-dark-purple"><strong>“Clients value their pet’s health the most”</strong></p>
+								<div class="author">
+									<div class="profile" style="background-image: url('img/profile1.png');"></div>
+									<p class="txt12">Found by Jessica from the interview with Inés Cruz on Jan 31, 2017</p>
+								</div>
+							</div>
+						</div>
+						<button class="dashed-gray-btn mb20" name="button"> <div class="bg-gray-add-btn m-right">+</div>Add New Insight</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- NEW HYPOTHESIS CHAT MODAL -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="half-col">
+			<div class="one-col p24">
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col">
+					<select class="input-x1">
+						<option value="first">Week 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col ptrl24">
+				<div class="hypothesis-wrap scroll-content">
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Improves Pet’s Health</p><p class="c-green txt12">Valid by 1 Insight</p>
+					</button>
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Comfort & Time Saver</p><p class="c-dark-purple-opacity txt12">Not yet Valid</p>
+					</button>
+					<button class="dashed-gray-btn c-cyan mb20"> <div class="bg-blue-add-btn m-right">+</div>Add New Hypothesis</button>
+				</div>
+			</div>
+			<button class="dark-purple-opacity-btn f-left p24 txt14">View valid hypothesis</button>
+		</div>
+		<div class="half-col bg-cyan">
+			<div class="one-col p24">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn">Key Insights</button></li>
+					<li><button class="white-border-small-btn">Deep Dive</button></li>
+					<li><button class="white-border-small-btn chat-btn active">12</button></li>
+					<li><button class="white-border-small-btn">Help</button></li>
+				</ul>
+			</div>
+			<div class="one-col mb20">
+				<div class="hypothesis-chat-wrap plr24 scroll-content">
+					<div class="hypothesis-chat">
+						<div class="hypothesis-comment ltr mb30">
+							<div class="message">
+								<p class="c-cyan serif">I need to dive deeper in this topic; I have a sense that I’m on the right way but need to conduct more interviews</p>
+								<div class="author">
+									<div class="profile" style="background-image: url('img/profile1.png');"></div>
+									<p class="txt14">by <strong>Linda</strong> at 12:23pm on Jan 26, 2017</p>
+								</div>
+							</div>
+						</div>
+						<div class="hypothesis-comment rtl mb30">
+							<div class="message">
+								<p class="c-cyan serif">Donec ac efficitur purus. Donec volutpat sapien id cursus rutrum. Suspendisse in fermentum elit. Suspendisse in fermentum elit. Aliquam eleifend.</p>
+								<div class="author">
+									<div class="profile" style="background-image: url('img/profile1.png');"></div>
+									<p class="txt14">by <strong>You</strong> at 12:23pm on Jan 26, 2017</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="add-comment plr24">
+					<textarea class="textarea-input" placeholder="Add your comment"></textarea>
+					<input type="submit" class="submit-input">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- NEW HYPOTHESIS DEEP DIVE MODAL -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="half-col">
+			<div class="one-col p24">
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col">
+					<select class="input-x1">
+						<option value="first">Week 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col ptrl24">
+				<div class="hypothesis-wrap scroll-content">
+					<button class="remove-gray-btn active mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Improves Pet’s Health</p><p class="c-green txt12">Valid by 1 Insight</p>
+					</button>
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Comfort & Time Saver</p><p class="c-dark-purple-opacity txt12">Not yet Valid</p>
+					</button>
+					<button class="dashed-gray-btn c-cyan mb20"> <div class="bg-blue-add-btn m-right">+</div>Add New Hypothesis</button>
+				</div>
+			</div>
+			<button class="dark-purple-opacity-btn f-left p24 txt14">View valid hypothesis</button>
+		</div>
+		<div class="half-col bg-dark-purple">
+			<div class="one-col p24">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn">Key Insights</button></li>
+					<li><button class="white-border-small-btn active">Deep Dive</button></li>
+					<li><button class="white-border-small-btn chat-btn">12</button></li>
+					<li><button class="white-border-small-btn">Help</button></li>
+				</ul>
+			</div>
+			<div class="one-col p24">
+				<div class="hypothesis-specs">
+					<p class="c-white mb20">Answer some simple questions and power up your hypothesis, it’ll take you 10 min 😉</p>
+					<button class="green-btn">Start</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- DEEP DIVE MODAL - START -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="odd-half-col bg-dark-purple-opacity8 table-cell">
+			<div class="one-col p24">
+				<p class="c-white-opacity serif">Value Proposition</p>
+				<h2 class="c-white"><strong>Improves Pet’s Health</strong></h2>
+			</div>
+			<div class="one-col p24">
+				<div class="hypothesis-quiz-wrap scroll-content">
+					<h2 class="c-white mb20">1. <strong>¿What value do you deliver to your customer?</strong></h2>
+					<textarea class="input-text" placeholder="Add your answer here"></textarea>
+				</div>
+			</div>
+			<div class="one-col plr24">
+				<button class="green-btn f-left">Next question</button>
+				<p class="c-light-purple p-btn f-left txt14"><strong>1</strong> / 5</p>
+			</div>
+		</div>
+		<div class="odd-third-col bg-dark-purple table-cell">
+			<div class="one-col p24">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn">←</button></li>
+					<li><button class="white-border-small-btn active">Deep Dive</button></li>
+				</ul>
+			</div>
+			<div class="one-col plr24">
+				<div class="hypothesis-specs scroll-content-white">
+					<div class="one-col mb20">
+						<p class="c-white txt14">1. What value do you deliver to your customer?</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">2. Which of the customer’s problems are you solving?</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">3. Which client’s needs are you helping satisfy?</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">4. Which service/product are ypu offering to each of your customer segments?</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">5. Which qualities of your product/service align with the needs/problems of your customer?</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">6. Which client’s needs are you helping satisfy?</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">7. Which service/product are ypu offering to each of your customer segments?</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">8. Which qualities of your product/service align with the needs/problems of your customer?</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">9. Which qualities of your product/service align with the needs/problems of your customer?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- DEEP DIVE MODAL - ANSWERING QUIZ -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="odd-half-col bg-dark-purple-opacity8 table-cell">
+			<div class="one-col p24">
+				<p class="c-white-opacity serif">Value Proposition</p>
+				<h2 class="c-white"><strong>Improves Pet’s Health</strong></h2>
+			</div>
+			<div class="one-col p24">
+				<div class="hypothesis-quiz-wrap scroll-content-white">
+					<h2 class="c-white mb20">5. <strong>¿Cuáles de las características clave de tu producto/servicio se ajustan a los problemas/necesidades del cliente?</strong></h2>
+					<textarea class="input-text" placeholder="Add your answer here"></textarea>
+				</div>
+			</div>
+			<div class="one-col plr24">
+				<button class="green-btn f-left">Next question</button>
+				<p class="c-light-purple p-btn f-left txt14"><strong>1</strong> / 5</p>
+			</div>
+		</div>
+		<div class="odd-third-col bg-dark-purple table-cell">
+			<div class="one-col p24">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn">←</button></li>
+					<li><button class="white-border-small-btn active">Deep Dive</button></li>
+				</ul>
+			</div>
+			<div class="one-col plr24">
+				<div class="hypothesis-specs scroll-content-white">
+					<div class="one-col mb20">
+						<p class="c-white txt14">1.<strong> What value do you deliver to your customer?</strong></p>
+						<p class="c-white txt14">I’m offering optimum nutrition to his or her pets</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">2. <strong>Which of the customer’s problems are you solving?</strong></p>
+						<p class="c-white txt14">The challenge of my custoer to find a really nutritious meal for his/her pet</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">3. <strong>Which client’s needs are you helping satisfy?</strong></p>
+						<p class="c-white txt14">His/her pet’s health</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">4. <strong>Which service/product are ypu offering to each of your customer segments?</strong></p>
+						<p class="c-white txt14">Selected flavors for different races</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">5. Which qualities of your product/service align with the needs/problems of your customer?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- DEEP DIVE MODAL - ANSWERED -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="half-col">
+			<div class="one-col p24">
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col">
+					<select class="input-x1">
+						<option value="first">Week 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col ptrl24">
+				<div class="hypothesis-wrap scroll-content">
+					<button class="remove-gray-btn mb20 active">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Improves Pet’s Health</p><p class="c-green txt12">Valid by 1 Insight</p>
+					</button>
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Comfort & Time Saver</p><p class="c-dark-purple-opacity txt12">Not yet Valid</p>
+					</button>
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Need supplies by pet</p><p class="c-dark-purple-opacity txt12">Not yet Valid</p>
+					</button>
+					<button class="dashed-gray-btn c-cyan mb20"> <div class="bg-blue-add-btn m-right">+</div>Add New Hypothesis</button>
+				</div>
+			</div>
+			<button class="dark-purple-opacity-btn f-left p24 txt14">View valid hypothesis</button>
+		</div>
+		<div class="half-col bg-dark-purple table-cell">
+			<div class="one-col p24">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn">Key Insights</button></li>
+					<li><button class="white-border-small-btn active">Deep Dive</button></li>
+					<li><button class="white-border-small-btn chat-btn">12</button></li>
+					<li><button class="white-border-small-btn">Help</button></li>
+				</ul>
+			</div>
+			<div class="one-col plr24">
+				<div class="hypothesis-specs scroll-content-white">
+					<div class="one-col mb20">
+						<div class="hypothesis-author-field">
+							<div class="author">
+								<div class="profile" style="background-image: url('img/profile1.png');"></div>
+								<p class="txt14">by <strong>Javier</strong> at 12:23pm on Jan 26, 2017</p>
+							</div>
+						</div>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">1.<strong> What value do you deliver to your customer?</strong></p>
+						<p class="c-white txt14">I’m offering optimum nutrition to his or her pets</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">2. <strong>Which of the customer’s problems are you solving?</strong></p>
+						<p class="c-white txt14">The challenge of my custoer to find a really nutritious meal for his/her pet</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">3. <strong>Which client’s needs are you helping satisfy?</strong></p>
+						<p class="c-white txt14">His/her pet’s health</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">4. <strong>Which service/product are ypu offering to each of your customer segments?</strong></p>
+						<p class="c-white txt14">Selected flavors for different races</p>
+					</div>
+					<div class="one-col mb20">
+						<p class="c-white txt14">5. Which qualities of your product/service align with the needs/problems of your customer?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- NEW HYPOTHESIS DEEP DIVE MODAL -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="half-col">
+			<div class="one-col p24">
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col">
+					<select class="input-x1">
+						<option value="first">Week 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col plr24">
+				<div class="hypothesis-specs scroll-content">
+					<div class="one-col mb20">
+						<img src="img/video-placeholder.png" alt="">
+						<p class="c-dark-purple"><strong>The Value Proposition Canvas Explained</strong></p>
+					</div>
+				</div>
+			</div>
+			<button class="dark-purple-opacity-btn f-left p24 txt14">View valid hypothesis</button>
+		</div>
+		<div class="half-col bg-soft-orange">
+			<div class="one-col p24">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn">Key Insights</button></li>
+					<li><button class="white-border-small-btn">Deep Dive</button></li>
+					<li><button class="white-border-small-btn chat-btn">12</button></li>
+					<li><button class="white-border-small-btn active">Help</button></li>
+				</ul>
+			</div>
+			<div class="one-col plr24 mb20">
+				<div class="hypothesis-specs scroll-content">
+					<div class="txt-content">
+						<p class="c-dark-purple mb20">Keep in mind these guidelines to fill your Value Proposition:</p>
+						<ul>
+							<li>ExExplain how does your product or service solves your customer’s issues, or improves his/her situation (relevance)</li>
+							<li>Cleraly specify a benefit (value)</li>
+							<li>Let the customer know why should he/she choose you and not your competitors (differentiate)</li>
+						</ul>
+						<ul>
+							<li>ExExplain how does your product or service solves your customer’s issues, or improves his/her situation (relevance)</li>
+							<li>Cleraly specify a benefit (value)</li>
+							<li>Let the customer know why should he/she choose you and not your competitors (differentiate)</li>
+						</ul>
+						<ul>
+							<li>ExExplain how does your product or service solves your customer’s issues, or improves his/her situation (relevance)</li>
+							<li>Cleraly specify a benefit (value)</li>
+							<li>Let the customer know why should he/she choose you and not your competitors (differentiate)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="one-col mb50">
+	<!-- MENU USER -->
+	<div class="full-menu-modal">
+		<!-- header -->
+		<div class="top-content">
+			<div class="table one-col">
+				<div class="three-col align-middle">
+					<div class="table">
+						<div class="table-cell align-middle pr-100">
+							<button class="serif-txt-btn">WEEKLY GOALS</button>
+						</div>
+						<div class="table-cell align-middle">
+							<div class="circle-progress-bar columns">
+								<div id="cont" class="bg-expert-img" data-pct="100">
+									<div class="bg-glow"></div>
+									<svg id="svg" width="60" height="60" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+										<circle r="20" cx="30" cy="30" fill="transparent" stroke-dasharray="200" stroke-dashoffset="0"></circle>
+										<circle id="bar" r="20" cx="30" cy="30" fill="transparent" stroke-dasharray="124" stroke-dashoffset="0" style="stroke-dashoffset: 200px;"></circle>
+									</svg>
+								</div>
+								<p class="txt12"><strong id="number">90</strong> Customers</p>
+							</div>
+							<div class="circle-progress-bar columns">
+								<div id="cont" class="bg-customer-img" data-pct="100">
+									<div class="bg-glow"></div>
+									<svg id="svg" width="60" height="60" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+										<circle r="20" cx="30" cy="30" fill="transparent" stroke-dasharray="200" stroke-dashoffset="0"></circle>
+										<circle id="bar" r="20" cx="30" cy="30" fill="transparent" stroke-dasharray="124" stroke-dashoffset="0" style="stroke-dashoffset: 200px;"></circle>
+									</svg>
+								</div>
+								<p class="txt12"><strong id="number">100</strong> Customers</p>
+							</div>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar">
+									<div class="bg-green b-radius-left" style="width:22%;">
+										<p class="txt14"><strong>22</strong></p>
+									</div>
+									<div class="bg-transparent" style="width:40%;">
+										<p class="txt14"><strong>8</strong></p>
+									</div>
+									<div class="bg-red b-radius-right" style="width:38%;">
+										<p class="txt14"><strong>38</strong></p>
+									</div>
+								</div>
+								<p class="txt12"><strong>8</strong> Hypothesis not yet backed</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="third-col t-right">
+					<div class="two-col">
+						<button class="up-arrow-btn"></button>
+					</div>
+					<div class="two-col">
+						<div class="one-col">
+							<button class="bg-white-rounded-btn">New Interview</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- bottom content -->
+		<div class="one-col bottom-content">
+			<div class="third-col">
+				<div class="one-col mb20">
+					<div class="one-third txt14 serif"><p>INTERVIEWS</p></div>
+					<div class="three-col txt12 c-white-opacity">
+						<strong class="right-gutter">4 NEW</strong><span class="right-gutter">14 EXPERTS</span> <span class="right-gutter">42 TOTAL</span>
+					</div>
+				</div>
+				<div class="one-col scroll-content-white">
+					<table>
+						<tr>
+							<td><p><strong>Inés Cruz</strong></p></td>
+							<td><p><strong>Customer</strong></p></td>
+							<td><p><strong>4 Key Insights</strong></p></td>
+						</tr>
+						<tr>
+							<td><p><strong>Javier Morales</strong></p></td>
+							<td><p><strong>Customer</strong></p></td>
+							<td><p><strong>2 Key Insights</strong></p></td>
+						</tr>
+						<tr>
+							<td><p><strong>Alan Real</strong></p></td>
+							<td><p><strong>Expert</strong></p></td>
+							<td><p><strong>1 Key Insight</strong></p></td>
+						</tr>
+						<tr>
+							<td><p><strong>Alan</strong></p></td>
+							<td><p><strong>Expert</strong></p></td>
+							<td><p><strong>1 Key Insight</strong></p></td>
+						</tr>
+						<tr>
+							<td><p>Roberto Ross</p></td>
+							<td><p>Customer</p></td>
+							<td><p>8 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Inés Cruz</p></td>
+							<td><p>Customer</p></td>
+							<td><p>4 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Javier Morales</p></td>
+							<td><p>Customer</p></td>
+							<td><p>2 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan Real</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Roberto Ross</p></td>
+							<td><p>Customer</p></td>
+							<td><p>8 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Inés Cruz</p></td>
+							<td><p>Customer</p></td>
+							<td><p>4 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Javier Morales</p></td>
+							<td><p>Customer</p></td>
+							<td><p>2 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan Real</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Inés Cruz</p></td>
+							<td><p>Customer</p></td>
+							<td><p>4 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Javier Morales</p></td>
+							<td><p>Customer</p></td>
+							<td><p>2 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan Real</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="three-col scroll-content-white">
+				<div class="one-col mb40">
+					<p class="txt14 serif mb20">WEEKLY SCORES</p>
+					<div class="scores-graph mb20">
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 30%;">3</p>
+							</div>
+							<div class="bottom">
+								<p><strong>Last Week</strong></p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 60%;">6</p>
+							</div>
+							<div class="bottom">
+								<p style="bottom: 50%;">6</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 100%;">10</p>
+							</div>
+							<div class="bottom">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="col active">
+							<div class="top">
+								<p style="bottom: 0;">0</p>
+							</div>
+							<div class="bottom">
+								<p>4</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 50%;">5</p>
+							</div>
+							<div class="bottom">
+								<p>3</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 70%;">7</p>
+							</div>
+							<div class="bottom">
+								<p>2</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 20%;">2</p>
+							</div>
+							<div class="bottom">
+								<p>1</p>
+							</div>
+						</div>
+					</div>
+					<div class="one-col">
+						<button class="bg-gray-rounded-btn">Upoload presentation</button>
+					</div>
+				</div>
+				<div class="one-col mb40">
+					<p class="txt14 serif mb30">MENTOR OBSERVATIONS: <strong>WEEK 4</strong></p>
+					<div class="hypothesis-comment ltr blue-comment mb20">
+						<div class="message">
+							<p class="serif">Donec ac efficitur purus. Donec volutpat sapien id cursus rutrum. Suspendisse in fermentum elit. Aliquam eleifend purus vel nulla congue dignissim. Integer nisl tortor, ornare in quam eu, posuere ultrices ligula.</p>
+							<div class="author">
+								<div class="profile" style="background-image: url('img/profile1.png');"></div>
+								<p class="txt14">by <strong>Javier</strong> at 12:23pm on Jan 26, 2017</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="one-col mb50">
+	<!-- MENU MENTOR -->
+	<div class="full-menu-modal">
+		<!-- header -->
+		<div class="top-content">
+			<div class="one-col">
+				<div class="third-col">
+					<div class="two-col align-middle">
+						<div class="c-center pl20 icon-mentor">
+							<p class="txt14 c-soft-orange"><img src="img/mentor.png"><strong>Javier Montes</strong></p>
+							<p class="txt14 c-white-opacity">Week 8</p>
+						</div>
+					</div>
+					<div class="two-col align-middle pr-100 t-center">
+						<h2><strong>38</strong></h2>
+						<p class="txt10"><strong>Interviews</strong></p>
+					</div>
+				</div>
+				<div class="third-col">
+					<div class="progress-bar-wrap">
+						<div class="progress-bar">
+							<div class="bg-green b-radius-left" style="width:22%;">
+								<p class="txt14"><strong>22</strong></p>
+							</div>
+							<div class="bg-transparent" style="width:40%;">
+								<p class="txt14"><strong>8</strong></p>
+							</div>
+							<div class="bg-red b-radius-right" style="width:38%;">
+								<p class="txt14"><strong>38</strong></p>
+							</div>
+						</div>
+						<p class="txt12"><strong>8</strong> Hypothesis not yet backed</p>
+					</div>
+				</div>
+				<div class="third-col t-right">
+					<div class="two-col">
+						<button class="up-arrow-btn"></button>
+					</div>
+					<div class="two-col">
+						<div class="one-col">
+							<button class="bg-white-rounded-btn">New Interview</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- bottom content -->
+		<div class="one-col bottom-content">
+			<div class="third-col">
+				<div class="one-col mb20">
+					<div class="one-third txt14 serif"><p>INTERVIEWS</p></div>
+					<div class="three-col txt12 c-white-opacity">
+						<strong class="right-gutter">4 NEW</strong><span class="right-gutter">14 EXPERTS</span> <span class="right-gutter">42 TOTAL</span>
+					</div>
+				</div>
+				<div class="one-col scroll-content-white">
+					<table>
+						<tr>
+							<td><p><strong>Inés Cruz</strong></p></td>
+							<td><p><strong>Customer</strong></p></td>
+							<td><p><strong>4 Key Insights</strong></p></td>
+						</tr>
+						<tr>
+							<td><p><strong>Javier Morales</strong></p></td>
+							<td><p><strong>Customer</strong></p></td>
+							<td><p><strong>2 Key Insights</strong></p></td>
+						</tr>
+						<tr>
+							<td><p><strong>Alan Real</strong></p></td>
+							<td><p><strong>Expert</strong></p></td>
+							<td><p><strong>1 Key Insight</strong></p></td>
+						</tr>
+						<tr>
+							<td><p><strong>Alan</strong></p></td>
+							<td><p><strong>Expert</strong></p></td>
+							<td><p><strong>1 Key Insight</strong></p></td>
+						</tr>
+						<tr>
+							<td><p>Roberto Ross</p></td>
+							<td><p>Customer</p></td>
+							<td><p>8 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Inés Cruz</p></td>
+							<td><p>Customer</p></td>
+							<td><p>4 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Javier Morales</p></td>
+							<td><p>Customer</p></td>
+							<td><p>2 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan Real</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Roberto Ross</p></td>
+							<td><p>Customer</p></td>
+							<td><p>8 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Inés Cruz</p></td>
+							<td><p>Customer</p></td>
+							<td><p>4 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Javier Morales</p></td>
+							<td><p>Customer</p></td>
+							<td><p>2 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan Real</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Inés Cruz</p></td>
+							<td><p>Customer</p></td>
+							<td><p>4 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Javier Morales</p></td>
+							<td><p>Customer</p></td>
+							<td><p>2 Key Insights</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan Real</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+						<tr>
+							<td><p>Alan</p></td>
+							<td><p>Expert</p></td>
+							<td><p>1 Key Insight</p></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="three-col scroll-content-white">
+				<div class="one-col mb40">
+					<p class="txt14 serif mb20">WEEKLY SCORES</p>
+					<div class="scores-graph mb20">
+						<div class="col active-week">
+							<div class="top">
+								<p style="bottom: 30%;">3</p>
+							</div>
+							<div class="bottom">
+								<p><strong>Last Week</strong></p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 60%;">6</p>
+							</div>
+							<div class="bottom">
+								<p style="bottom: 50%;">6</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 100%;">10</p>
+							</div>
+							<div class="bottom">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 0;">0</p>
+							</div>
+							<div class="bottom">
+								<p>4</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 50%;">5</p>
+							</div>
+							<div class="bottom">
+								<p>3</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 70%;">7</p>
+							</div>
+							<div class="bottom">
+								<p>2</p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="top">
+								<p style="bottom: 20%;">2</p>
+							</div>
+							<div class="bottom">
+								<p>1</p>
+							</div>
+						</div>
+					</div>
+					<div class="one-col mb20">
+						<p class="txt14 serif mb20">UPLOAD LINK</p>
+						<input type="text" class="input-x1 c-dark-purple two-third-col bold-sans-serif" placeholder="https://www.dropbox.com/home/Canvas%20Toolbox%20Pedro%20Lopez" value="https://www.dropbox.com/home/Canvas%20Toolbox%20Pedro%20Lopez">
+					</div>
+					<div class="one-col mb20">
+						<p class="txt14 serif mb20">MENTOR OBSERVATIONS</p>
+						<div class="one-col mb20">
+							<textarea name="name" class="input-x1 c-dark-purple two-third-col serif" placeholder="Add your comment" cols="80"></textarea>
+						</div>
+						<button class="green-btn p-btn" name="button">Add your comment</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="one-col mb50 p24">
+	<div class="two-col columns">
+		<!-- NEW HYPOTHESIS DEEP DIVE MODAL -->
+		<div class="key-insight-modal">
+			<div class="one-col mb20">
+				<p class="mb20"><strong>Add New Key Insight</strong></p>
+				<textarea class="textarea-input input-x1 serif c-dark-purple" placeholder="Add your comment">I usually aske them to deliver it to my home, because I really hate the traffic near the stores (and the traffic in general!)</textarea>
+			</div>
+			<div class="one-col mb20">
+				<p class="mb20"><strong>Add key insight to:</strong></p>
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Select Canvas Area</option>
+					</select>
+				</div>
+				<div class="half-col column">
+					<select class="input-x1">
+						<option value="first">Select Hypothesis</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col mb20">
+				<p class="mb20"><strong>This insight:</strong></p>
+				<div class="half-col">
+					<div class="one-col mb10">
+						<div class="green-radio-input bg-purple-radio-input"><input type="radio" name="character0" value="customer"><span class="check"></span></div>
+						<p>is a <strong>Must have</strong></p>
+					</div>
+					<div class="one-col mb10">
+						<div class="green-radio-input bg-purple-radio-input"><input type="radio" name="character0" value="customer"><span class="check"></span></div>
+						<p>is a <strong>Nice to have</strong></p>
+					</div>
+					<div class="one-col mb10">
+						<div class="green-radio-input bg-purple-radio-input"><input type="radio" name="character0" value="customer"><span class="check"></span></div>
+						<p><strong>Invalidates</strong> the Hypothesis</p>
+					</div>
+				</div>
+				<div class="half-col">
+					<div class="small-canvas-grid">
+						<div class="col col-x2">
+							<p>P</p>
+						</div>
+						<div class="col-x2">
+							<div class="col col-x1">
+								<p>A</p>
+							</div>
+							<div class="col col-x1">
+								<p>R</p>
+							</div>
+						</div>
+						<div class="col col-x2">
+							<p>VP</p>
+						</div>
+						<div class="col-x2">
+							<div class="col col-x1">
+								<p>CR</p>
+							</div>
+							<div class="col col-x1">
+								<p>CH</p>
+							</div>
+						</div>
+						<div class="col col-vertical">
+							<p>$</p>
+						</div>
+						<div class="col col-vertical">
+							<p>RS</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="blue-btn p-btn">Save Insight</button>
+		</div>
+	</div>
+	<div class="two-col columns">
+		<!-- NEW HYPOTHESIS DEEP DIVE MODAL -->
+		<div class="key-insight-modal">
+			<div class="one-col mb20">
+				<p class="mb20"><strong>Add New Key Insight</strong></p>
+				<textarea class="input-x1 textarea-input serif c-dark-purple" placeholder="Add your comment"></textarea>
+			</div>
+			<div class="one-col">
+				<p class="mb20"><strong>Add key insight to:</strong></p>
+				<div class="half-col mb20 right-gutter">
+					<select class="input-x1">
+						<option value="first">Select Canvas Area</option>
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col mb20 column">
+					<select class="input-x1 active">
+						<option value="first">Select Hypothesis</option>
+						<option value="first">New Hypothesis:</option>
+					</select>
+				</div>
+				<div class="one-col mb20">
+					<input class="input-x1 c-dark-purple serif active" value="Confort and Time Saver">
+				</div>
+			</div>
+			<div class="one-col mb20">
+				<p class="mb20"><strong>This insight:</strong></p>
+				<div class="half-col">
+					<div class="one-col mb10">
+						<div class="green-radio-input bg-purple-radio-input"><input type="radio" name="character1" value="customer"><span class="check"></span></div>
+						<p>is a <strong>Must have</strong></p>
+					</div>
+					<div class="one-col mb10">
+						<div class="green-radio-input bg-purple-radio-input"><input type="radio" name="character1" value="customer"><span class="check"></span></div>
+						<p>is a <strong>Nice to have</strong></p>
+					</div>
+					<div class="one-col mb10">
+						<div class="green-radio-input bg-purple-radio-input"><input type="radio" name="character1" value="customer"><span class="check"></span></div>
+						<p><strong>Invalidates</strong> the Hypothesis</p>
+					</div>
+				</div>
+				<div class="half-col">
+					<div class="small-canvas-grid">
+						<div class="col col-x2">
+							<p>P</p>
+						</div>
+						<div class="col-x2">
+							<div class="col col-x1">
+								<p>A</p>
+							</div>
+							<div class="col col-x1">
+								<p>R</p>
+							</div>
+						</div>
+						<div class="col col-x2 active">
+							<p>VP</p>
+						</div>
+						<div class="col-x2">
+							<div class="col col-x1">
+								<p>CR</p>
+							</div>
+							<div class="col col-x1">
+								<p>CH</p>
+							</div>
+						</div>
+						<div class="col col-vertical">
+							<p>$</p>
+						</div>
+						<div class="col col-vertical">
+							<p>RS</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="blue-btn p-btn">Save Insight</button>
+		</div>
+	</div>
+</div>
+
+<div class="one-col mb50">
+	<div class="two-col">
+		<!-- ADD COLLABORATOR MODAL -->
+		<div class="add-collaborator-modal" style="background-image: url('img/bg-collaborators.png');">
+			<button class="dark-purple-opacity-close-btn"></button>
+			<h2 class="c-dark-purple serif mb20">Add Collaborators to your Canvas</h2>
+			<p class="c-dark-purple mb20"><strong>People</strong></p>
+			<div class="one-col mb20">
+				<div class="input-x1 c-dark-purple tags_1"></div>
+				<button class="green-btn">Invite</button>
+			</div>
+			<div class="one-col">
+				<p class="c-dark-purple mb20"><strong>Who access</strong></p>
+				<div class="scroll-content">
+					<div class="profile-thumb mb20">
+						<div class="img" style="background-image: url('img/profile1.png');"></div>
+						<div class="txt">
+							<p><strong>Jessica (you)</strong></p>
+							<p>jess@fomentogeek.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="two-col">
+		<!-- ADD COLLABORATOR MODAL -->
+		<div class="add-collaborator-modal" style="background-image: url('img/bg-collaborators.png');">
+			<button class="dark-purple-opacity-close-btn"></button>
+			<h2 class="c-dark-purple serif mb20">Add Collaborators to your Canvas</h2>
+			<p class="c-dark-purple mb20"><strong>People</strong></p>
+			<div class="one-col mb20">
+				<div class="input-x1 c-dark-purple tags_1"></div>
+				<button class="green-btn m-right">Invite</button><button class="c-green"><p>You've <strong>invitedpedro@fomentogeek.com</strong></p></button>
+			</div>
+			<div class="one-col">
+				<p class="c-dark-purple mb20"><strong>Who access</strong></p>
+				<div class="scroll-content">
+					<div class="profile-thumb mb20">
+						<div class="img" style="background-image: url('img/profile1.png');"></div>
+						<div class="txt">
+							<p><strong>Jessica (you)</strong></p>
+							<p>jess@fomentogeek.com</p>
+						</div>
+					</div>
+					<div class="profile-thumb mb20">
+						<div class="img" style="background-image: url('img/profile1.png');"></div>
+						<div class="txt">
+							<p><strong>Jessica (you)</strong></p>
+							<p>jess@fomentogeek.com</p>
+						</div>
+					</div>
+					<div class="profile-thumb mb20">
+						<div class="img" style="background-image: url('img/profile1.png');"></div>
+						<div class="txt">
+							<p><strong>Jessica (you)</strong></p>
+							<p>jess@fomentogeek.com</p>
+						</div>
+					</div>
+					<div class="profile-thumb mb20">
+						<div class="img" style="background-image: url('img/profile1.png');"></div>
+						<div class="txt">
+							<p><strong>Jessica (you)</strong></p>
+							<p>jess@fomentogeek.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="one-col mb50">
+	<div class="two-col columns">
+		<!-- ASIGN PRESENTATION MODAL -->
+		<div class="add-collaborator-modal">
+			<button class="dark-purple-opacity-close-btn"></button>
+			<h2 class="c-dark-purple serif mb20">Asign presentations</h2>
+			<div class="two-col mb20 columns">
+				<p class="c-dark-purple mb20"><strong>Due Date</strong></p>
+				<input type="text" class="input-x1 c-dark-purple" placeholder="1 de Enero 2017">
+			</div>
+			<div class="two-col mb20 columns">
+				<p class="c-dark-purple mb20"><strong>Link to Dropbox</strong></p>
+				<input type="text" class="input-x1 c-dark-purple" placeholder="http://dropbox.com/rickroll">
+			</div>
+			<div class="two-col mb20 columns">
+				<p class="c-dark-purple mb20"><strong>Syllabus theme</strong> (optional)</p>
+				<select class="input-x1 c-dark-purple">
+					<option value="first">None</option>
+				</select>
+			</div>
+			<div class="one-col">
+				<p class="c-dark-purple mb20"><strong>Select Team(s)</strong></p>
+				<div class="scroll-content mb20">
+					<div class="one-col mb10">
+						<div class="green-radio-input bg-purple-radio-input"><input type="checkbox" name="character2" value="customer"><span class="check"></span></div>
+						<p class="c-dark-purple-opacity"><strong>New Dog Food</strong></p>
+					</div>
+					<div class="one-col mb10">
+						<div class="green-radio-input bg-purple-radio-input"><input type="checkbox" name="character2" value="customer"><span class="check"></span></div>
+						<p class="c-dark-purple-opacity"><strong>Social Project</strong></p>
+					</div>
+					<div class="one-col mb10">
+						<div class="green-radio-input bg-purple-radio-input"><input type="checkbox" name="character2" value="customer"><span class="check"></span></div>
+						<p class="c-dark-purple-opacity"><strong>Healtcare App</strong></p>
+					</div>
+					<div class="one-col mb10">
+						<div class="green-radio-input bg-purple-radio-input"><input type="checkbox" name="character2" value="customer"><span class="check"></span></div>
+						<p class="c-dark-purple-opacity"><strong>Job Finder App</strong></p>
+					</div>
+					<div class="one-col mb10">
+						<div class="green-radio-input bg-purple-radio-input"><input type="checkbox" name="character2" value="customer"><span class="check"></span></div>
+						<p class="c-dark-purple-opacity"><strong>Tinder for Lawmaking</strong></p>
+					</div>
+				</div>
+				<button class="green-btn">Asign</button>
+			</div>
+		</div>
+	</div>
+	<div class="two-col columns">
+		<!-- ASIGN PRESENTATION: TEAM PREVIOUSLY SELECTED-->
+		<div class="add-collaborator-modal">
+			<button class="dark-purple-opacity-close-btn"></button>
+			<h2 class="serif">Asign presentation to team New Dog Food</h2>
+			<div class="one-col">
+				<div class="half-col columns mb20">
+					<p class="mb20"><strong>Due date</strong></p>
+					<input type="text" class="input-x1 c-dark-purple" placeholder="3 Jan 2017" value="3 Apr 2017">
+				</div>
+				<div class="half-col columns mb20">
+					<p class="mb20"><strong>Link to Dropbox</strong></p>
+					<input type="text" class="input-x1 c-dark-purple" placeholder="https://www.dropbox.com/business/">
+				</div>
+				<div class="half-col columns mb50">
+					<p class="mb20"><strong>Syllabus theme</strong> (optional)</p>
+					<select class="input-x1 c-dark-purple">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+			</div>
+			<button class="green-btn">Invite & create</button>
+		</div>
+	</div>
+
+</div>
+
+<div class="one-col mb50">
+	<!-- DROPDOWN PURPLE DARK MENU -->
+	<div class="bg-dark-purple dropdown-menu">
+		<ul class="scroll-content-white">
+			<li>New Team</li>
+			<li>My profile</li>
+			<li>Options</li>
+			<li>Logout</li>
+		</ul>
+	</div>
+</div>
+
+<div class="one-col mb50">
+	<!-- DROPDOWN PURPLE DARK MENU -->
+	<div class="bg-soft-orange dropdown-menu">
+		<ul class="scroll-content">
+			<li>New Team</li>
+			<li>New Cohort</li>
+			<li>My profile</li>
+			<li>Options</li>
+			<li>Logout</li>
+		</ul>
+	</div>
+</div>
+
+<div class="one-col mb50">
+	<!-- ADD NEW COHORT -->
+	<div class="add-new-cohort-modal">
+		<button class="dark-purple-opacity-close-btn"></button>
+		<h2 class="serif">New Cohort</h2>
+		<div class="one-col mb50">
+			<p class="mb20"><strong>Name large name</strong>(optional)</p>
+			<input type="text" class="input-x1" placeholder="Speciality / Event name /  february">
+		</div>
+		<button class="green-btn">Asign</button>
+	</div>
+</div>
+
+<div class="one-col mb50">
+	<div class="two-col columns">
+		<!-- ADD NEW PROJECT -->
+		<div class="add-new-project-modal">
+			<button class="dark-purple-opacity-close-btn"></button>
+			<h2 class="serif">New Project</h2>
+			<div class="one-col mb20">
+				<p class="mb20"><strong>Name</strong></p>
+				<input type="text" class="input-x1 med-input-x1" placeholder="Idea or Company">
+			</div>
+			<div class="one-col mb20">
+				<p class="mb20"><strong>Brief description</strong></p>
+				<textarea type="text" class="input-x1 med-input-x1" placeholder="More information to help you remember"></textarea>
+			</div>
+			<div class="one-col mb20">
+				<p class="mb20"><strong>People</strong></p>
+				<div class="input-x1 c-dark-purple tags_1"></div>
+			</div>
+			<div class="one-col mb50">
+				<p class="mb20"><strong>Chose another mentor</strong></p>
+				<div class="input-x1 c-dark-purple tags_1"></div>
+			</div>
+			<button class="purple-opacity-border-btn">Invite & create</button>
+		</div>
+	</div>
+	<div class="two-col columns">
+		<!-- ADD NEW PROJECT FILLED -->
+		<div class="add-new-project-modal">
+			<button class="dark-purple-opacity-close-btn"></button>
+			<h2 class="serif">New Project</h2>
+			<div class="one-col mb20">
+				<p class="mb20"><strong>Name</strong></p>
+				<input type="text" class="input-x1 med-input-x1" placeholder="Idea or Company" value="Carrot dog food">
+			</div>
+			<div class="one-col mb20">
+				<p class="mb20"><strong>Brief description</strong></p>
+				<textarea type="text" class="input-x1 med-input-x1" placeholder="More information to help you remember">This team has found dogs have a rich sense for tasting carrots and receive an overall nutritional gain.</textarea>
+			</div>
+			<div class="one-col mb20">
+				<p class="mb20"><strong>People</strong></p>
+				<div class="input-x1 c-dark-purple tags_1"></div>
+			</div>
+			<div class="one-col mb50">
+				<p class="mb20"><strong>Chose another mentor</strong></p>
+				<div class="input-x1 c-dark-purple tags_1"></div>
+			</div>
+			<button class="green-btn">Invite & create</button>
+		</div>
+	</div>
+</div>
+
+<div class="one-col mb50">
+	<div class="add-new-cohort-modal">
+		<div class="one-col columns mb20">
+			<p class="mb20"><strong>Due date</strong></p>
+			<input type="text" class="input-x1 input success c-dark-purple" placeholder="3 Jan 2017" value="3 Apr 2017">
+			<p class="help success">This email is available.</p>
+		</div>
+		<div class="one-col columns mb20">
+			<p class="mb20"><strong>Link to Dropbox</strong></p>
+			<input type="text" class="input-x1 input invalid c-dark-purple" placeholder="https://www.dropbox.com/business/">
+			<p class="help invalid">This email is invalid.</p>
+		</div>
+	</div>
+</div>
+
+
+<!-- CHAT MODAL -->
+<div class="one-col mb50">
+	<div class="chat-modal shadow">
+		<button class="gray-close-btn"></button>
+		<div class="one-col bg-cyan">
+			<div class="one-col p24">
+				<p class="c-white">Chatting with <strong>Linda Gutierrez</strong></p>
+			</div>
+			<div class="one-col mb20">
+				<div class="hypothesis-chat-wrap plr24 scroll-content">
+					<ul class="inline">
+						<li><p class="c-white">Carrot dog food</p></li>
+						<li><p class="c-white">Andrea Garza</p></li>
+						<li><p class="c-white">Other team on Cohort</p></li>
+						<li><p class="c-white">Other team on Cohort</p></li>
+						<li><p class="c-white">Other team on Cohort</p></li>
+						<li><p class="c-white">Other team on Cohort</p></li>
+						<li><p class="c-white">Miguel Arredondo</p></li>
+						<li><p class="c-white">Pedro Demecci</p></li>
+						<li><p class="c-white">Maria Garza</p></li>
+						<li><p class="c-white">Arturo Gonzalez</p></li>
+						<li><p class="c-white">Laura Martínez</p></li>
+						<li><p class="c-white">Key Insights</p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CHAT MODAL -->
+<div class="one-col mb50">
+	<div class="chat-modal shadow">
+		<button class="gray-close-btn"></button>
+		<div class="one-col bg-cyan">
+			<div class="one-col p24">
+				<button class="white-border-small-btn inline mr10">←</button>
+				<p class="c-white inline">Chatting with <strong>Linda Gutierrez</strong></p>
+				</ul>
+			</div>
+			<div class="one-col mb20">
+				<div class="hypothesis-chat-wrap plr24 scroll-content">
+					<div class="hypothesis-chat">
+						<div class="hypothesis-comment ltr mb30">
+							<div class="message">
+								<p class="c-cyan serif">I need to dive deeper in this topic; I have a sense that I’m on the right way but need to conduct more interviews</p>
+								<div class="author">
+									<div class="profile" style="background-image: url('img/profile1.png');"></div>
+									<p class="txt14">by <strong>Linda</strong> at 12:23pm on Jan 26, 2017</p>
+								</div>
+							</div>
+						</div>
+						<div class="hypothesis-comment rtl mb30">
+							<div class="message">
+								<p class="c-cyan serif">Donec ac efficitur purus. Donec volutpat sapien id cursus rutrum. Suspendisse in fermentum elit. Suspendisse in fermentum elit. Aliquam eleifend.</p>
+								<div class="author">
+									<div class="profile" style="background-image: url('img/profile1.png');"></div>
+									<p class="txt14">by <strong>You</strong> at 12:23pm on Jan 26, 2017</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="add-comment plr24">
+					<textarea class="textarea-input" placeholder="Add your comment"></textarea>
+					<input type="submit" class="submit-input">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- LIBRARIES -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jquery.tagsinput.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

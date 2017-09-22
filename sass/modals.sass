@@ -1,0 +1,444 @@
+// MODALS
+
+// 1.- ADD HYPOTHESIS MODAL VARIATIONS
+.hypothesis-modal
+	position: relative
+	width: 913px
+	min-height: 510px
+	float: left
+	+table
+	background: $c-white
+	padding: 3px
+	+shadow
+	> div.half-col
+		+table-cell
+		float: initial
+	.input-text
+		height: 160px
+		font-family: 'PT Serif', serif
+		color: $c-dark-purple
+		+placeholder-color($dark-purple-opacity)
+	.hypothesis-quiz-wrap
+		height: 270px
+		overflow: hidden
+	.hypothesis-wrap.mCS_no_scrollbar
+		width: 370px
+	.hypothesis-wrap
+		height: 340px
+		overflow: hidden
+	ul.specs-tabs
+		height: 42px
+		li
+			display: inline-block
+			padding-right: 0.5em
+		li:last-child
+			padding-right: 0
+
+.hypothesis-specs
+	width: 100%
+	height: 390px
+	.txt-content
+		ul li
+			display: inline-block
+			margin-bottom: 1.25em
+		li:before
+			content: '•'
+			padding-right: 7px
+	.specs-wrap
+		max-width: 640px
+
+@media (max-width: $tablet_b)
+	.hypothesis-specs.scroll-content
+		overflow-y: scroll
+
+// HYPOTHESIS COMMMENT
+.hypothesis-comment
+	background: $c-white
+	padding: 1em
+	+border-radius(10px)
+	position: relative
+	.status
+		max-width: 48px
+		display: inline-block
+		vertical-align: top
+	.message
+		display: inline-block
+		max-width: 258px
+		margin-left: 10px
+	.author
+		display: inline-block
+		color: $dark-purple-opacity
+		margin-top: 10px
+	.author p
+		padding-left: 10px
+		display: inline-block
+		max-width: 220px
+	.profile
+		display: inline-block
+		vertical-align: top
+		height: 1.5em
+		+bg-img
+		+border-radius(1.5em)
+		width: 1.5em
+
+.hypothesis-author-field
+	.author
+		display: inline-block
+		color: $c-white-opacity
+		margin-top: 10px
+	.author p
+		padding-left: 10px
+		display: inline-block
+	.profile
+		display: inline-block
+		vertical-align: top
+		height: 1.5em
+		+bg-img
+		+border-radius(1.5em)
+		width: 1.5em
+
+// HYPOTHESIS CHAT
+.hypothesis-chat-wrap
+	height: 352px
+	padding-bottom: 1.5em
+
+.hypothesis-chat
+	.hypothesis-comment.ltr:before
+		content: ''
+		height: 7px
+		width: 10px
+		position: absolute
+		left: 15px
+		bottom: -9px
+		border: 3px solid $c-white
+		border-left-style: none
+		border-top-style: none
+		+border-bottom-left-radius(3px)
+		+border-bottom-right-radius(8px)
+	.hypothesis-comment.rtl:before
+		content: ''
+		height: 7px
+		width: 10px
+		position: absolute
+		right: 15px
+		bottom: -9px
+		border: 3px solid $c-white
+		border-right-style: none
+		border-top-style: none
+		+border-bottom-left-radius(8px)
+		+border-bottom-right-radius(2px)
+		.author
+			direction: rtl
+			text-align: right
+			width: 100%
+		.author p
+			padding-left: 0
+			padding-right: 10px
+	.hypothesis-comment.rtl
+		.author
+			direction: rtl
+			width: 100%
+	.hypothesis-comment .message
+		max-width: 100%
+		line-height: 1.4em
+		margin-left: 0
+	.hypothesis-comment .author p
+		max-width: 300px
+	@media (min-width: $tablet_b)
+		.hypothesis-comment.ltr
+			margin-right: 2.5em
+		.hypothesis-comment.rtl
+			margin-left: 2.5em
+
+.add-comment
+	.textarea-input
+		border: 3px solid $c-input-gray
+		display: inline-block
+		max-width: 84%
+		margin-right: 2%
+		height: 50px
+		font-family: 'PT Serif', serif
+		padding: 0.35em
+		+border-radius(5px)
+		+placeholder-color(#9B9B9B)
+	.submit-input
+		background-image: url('../img/hit-icon.png')
+		background-repeat: no-repeat
+		background-position: center center
+		color: transparent
+		display: inline-block
+		max-width: 12%
+		height: 50px
+		float: initial
+		vertical-align: top
+
+.new-hypotesis-modal
+	border: 3px solid $c-input-gray
+	+border-radius(5px)
+	padding: 1.25em
+	position: relative
+	width: 370px
+
+.add-hypothesis
+	+shadow
+	float: left
+	background: $c-white
+	position: relative
+	max-width: 457px
+	.bg-red
+		background: $c-red!important
+	.bg-green
+		background: $c-green!important
+	.bg-soft-green
+		background: $c-soft-green!important
+	.bg-blue
+		background: $c-blue!important
+	.bg-orange
+		background: $c-orange!important
+	.bg-yellow
+		background: $c-yellow!important
+	.bg-purple
+		background: $c-purple!important
+	.bg-light-blue
+		background: $c-light-blue!important
+	.bg-light-blue, .bg-red, .bg-green, .bg-soft-green, .bg-blue, .bg-orange, .bg-purple
+		color: $c-white!important
+		font-weight: bold
+	.bg-yellow
+		color: $c-dark-purple!important
+		font-weight: bold
+
+ul.color-picker-list
+	float: left
+	margin-top: 1.7em
+	max-width: 10em
+	li
+		display: inline-block
+		margin-right: 0.875em
+		margin-top: 0.875em
+	li > button
+		+border-radius(3px)
+		height: 1.375em
+		width: 1.375em
+
+// 2.- DARK PURPLE BIG MODAL
+.full-menu-modal
+	background: $c-dark-purple
+	color: $c-white
+	display: inline-block
+	max-width: 1200px
+	padding: 20px
+	table
+		min-width: 330px
+		font-size: 14px
+		width: 100%
+	table td
+		padding-right: 20px
+		padding-bottom: 5px
+	.top-content
+		display: inline-block
+		padding: 0 0 50px 0
+	.white-opacity-txt-btn
+		+p-btn
+	.progress-bar-wrap
+		padding-top: 0!important
+	@media (max-width: $tablet_b)
+		.top-content .table-cell
+			text-align: center
+		.progress-bar-wrap
+			margin: 0 auto
+			display: block
+		.progress-bar
+			margin: 20px auto
+			display: block
+		.icon-mentor
+			text-align: center
+			margin-bottom: 20px
+	@media (min-width: $tablet_b)
+		padding: 50px 50px 70px 50px
+		.bottom-content
+			.one-col.scroll-content-white
+				height: 360px
+			.three-col.scroll-content-white
+				height: 406px
+				padding-left: 30px
+
+.scores-graph
+	display: inline-block
+	width: 442px
+	.col
+		float: left
+		padding-top: 20px
+		padding-bottom: 10px
+		width: 50px
+		+border-radius(4px)
+	.col.active
+		background: $c-cyan
+	.col .bottom
+		position: relative
+		border-top: 2px solid $c-white-opacity
+		color: $c-white-opacity
+		text-align: center
+		padding-top: 10px
+		font-size: 14px
+		font-weight: bold
+		margin-top: 4px
+	.col .top
+		height: 81px
+		position: relative
+	.col .top p
+		position: absolute
+		text-align: center
+		font-size: 14px
+		height: 0
+		line-height: 11px
+		font-weight: bold
+		padding: 10px 0
+		+horizontal-center
+		width: 10px
+		&:before
+			content: '•'
+			font-size: 24px
+			top: 4px
+			margin-right: 3px
+			position: relative
+	.col.active-week .top p
+		color: $c-dark-purple!important
+		+border-radius(5px)
+		background: $c-white
+		padding-bottom: 18px
+		display: grid
+		width: 50px
+		line-height: 6px
+		border-radius: 5px
+		&:before
+			content: ''!important
+		&:after
+			content: ''
+			background: $c-white
+			height: 30px
+			width: 40px
+			position: absolute
+			top: 3px
+			left: -9px
+			+border-radius(5px)
+			z-index: -1
+	.col .top:before
+		content: ''
+		position: absolute
+		height: 85px
+		background: $c-white-opacity
+		+horizontal-center
+		width: 2px
+	.col:nth-child(1)
+		width: 124px
+	.col:nth-child(1) .bottom
+		color: $c-white!important
+		text-align: left
+
+
+// 3.- ADD KEY INSIGHT MODAL
+.key-insight-modal
+	+shadow
+	background: $c-white
+	padding: 40px
+	width: 586px
+	.blue-btn
+		padding: 1em 1.5em
+		min-width: 203px
+	.input-x1.active, textarea.active
+		+transition(all ease 0.3s)
+		border: 3px solid $c-cyan
+	select.active
+		color: $c-cyan
+		border: 3px solid $c-input-gray!important
+		font-weight: bold
+
+.key-insight-modal:before
+	content: " "
+	position: absolute
+	top: 50%
+	left: -8px
+	box-shadow: 4px 5px 14px -4px rgba(0, 0, 0, 0.2)
+	+transform(rotate(135deg))
+	width: 20px
+	z-index: 1
+	min-height: 20px
+	background: $c-white
+
+
+// 4.- ADD COLLABORATOR MODAL
+.add-collaborator-modal
+	padding: 50px
+	display: inline-block
+	position: relative
+	width: 600px
+	min-height: 500px
+	background-color: $c-white
+	background-size: initial
+	background-repeat: no-repeat
+	background-position: top left
+	color: $c-dark-purple
+	+shadow
+	.scroll-content
+		height: 130px
+	.tagsinput
+		padding-bottom: 0
+	.tagsinput > div
+		padding-bottom: 10px
+	.tagsinput .tag
+		margin-bottom: 7px
+	h2
+		margin-bottom: 30px
+	.input-x1
+		font-size: 14px
+		color: $c-dark-purple
+		padding: 13px 11px!important
+
+
+// 5.- ADD NEW COHORT
+.add-new-cohort-modal
+	color: $c-dark-purple
+	background: $c-white
+	padding: 35px 45px
+	position: relative
+	min-height: 335px
+	+shadow
+	width: 590px
+	.input-x1
+		font-size: 14px
+		color: $c-dark-purple
+		padding: 13px 11px!important
+	h2
+		margin-bottom: 20px
+	button.green-btn
+		min-width: 200px
+
+
+// 5.- ADD NEW PROJECT
+.add-new-project-modal
+	color: $c-dark-purple
+	background: $c-white
+	padding: 35px 45px 45px 45px
+	position: relative
+	+shadow
+	width: 590px
+	textarea
+		height: 110px
+	.input-x1, .tagsinput
+		font-size: 14px
+		color: $c-dark-purple
+		padding: 13px 11px!important
+	.tagsinput
+		padding-bottom: 0!important
+	.tagsinput > div
+		padding-bottom: 13px
+	.tagsinput .tag
+		top: -3px
+		margin-bottom: 5px
+		position: relative
+	h2
+		margin-bottom: 30px
+	button.green-btn,
+	button.purple-opacity-border-btn
+		min-width: 200px

@@ -1,0 +1,324 @@
+/* CANVAS */
+
+
+// CANVAS GRID PAGE
+.tile
+	align-items: stretch
+	display: block
+	flex-basis: 0
+	flex-grow: 1
+	flex-shrink: 1
+	min-height: min-content
+
+.tile.is-child
+	margin: 0 !important
+
+.tile.is-vertical
+	flex-direction: column
+
+.tile.is-ancestor
+	margin-left: -0.75rem
+	margin-right: -0.75rem
+	margin-top: -0.75rem
+
+.tile.is-ancestor:last-child
+	margin-bottom: -0.75rem
+
+.tile.is-ancestor:not(:last-child)
+	margin-bottom: 0.75rem
+
+.tile.is-child
+	margin: 0 !important
+
+.tile.is-vertical
+	flex-direction: column
+
+.tile.is-vertical > .tile.is-child:not(:last-child)
+	margin-bottom: 1.5rem !important
+
+@media (min-width: 769px)
+	.tile:not(.is-child)
+		display: flex
+	.tile.is-1
+		flex: none
+		width: 8.3333333333%
+	.tile.is-2
+		flex: none
+		width: 16.6666666667%
+	.tile.is-fifth
+		flex: none
+		width: 20%
+	.tile.is-3
+		flex: none
+		width: 25%
+	.tile.is-4
+		flex: none
+		width: 33.3333333333%
+	.tile.is-5
+		flex: none
+		width: 41.6666666667%
+	.tile.is-6
+		flex: none
+		width: 50%
+	.tile.is-7
+		flex: none
+		width: 58.3333333333%
+	.tile.is-8
+		flex: none
+		width: 66.6666666667%
+	.tile.is-9
+		flex: none
+		width: 75%
+	.tile.is-10
+		flex: none
+		width: 83.3333333333%
+	.tile.is-11
+		flex: none
+		width: 91.6666666667%
+	.tile.is-12
+		flex: none
+		width: 100%
+
+.canvas-wrap
+	height: auto
+	@media (min-width: 800px)
+		height: 700px
+
+.canvas-grid
+	display: inline-block
+	max-width: 812px
+	width: 90%
+	.top
+		color: $c-canvas-gray
+		padding: 10px
+		width: 90%
+	.comments
+		color: $dark-purple-opacity
+		position: absolute
+		right: 10px
+		top: 4px
+		font-size: 10px
+	.comments:before
+		content: url('../img/icon-small-chat.png')
+		position: absolute
+		left: -14px
+		top: 2px
+	.listed-hypothesis
+		display: inline-block
+		font-size: 14px
+		font-weight: bold
+		line-height: 20px
+		position: relative
+		padding-left: 10px
+		margin-bottom: 1.2em
+		width: 100%
+	.listed-hypothesis.active
+		color: $c-dark-purple
+	.listed-hypothesis.inactive
+		opacity: 0.7
+	.listed-hypothesis:before
+		content: ''
+		height: 100%
+		width: 5px
+		left: 0
+		position: absolute
+	.tag
+		padding-left: 14px
+	.orange-tag.listed-hypothesis:before
+		background-color: $c-orange
+	.light-blue-tag.listed-hypothesis:before
+		background-color: $c-light-blue
+	.blue-tag.listed-hypothesis:before
+		background-color: $c-blue
+	.red-tag.listed-hypothesis:before
+		background-color: $c-red
+	.purple-tag.listed-hypothesis:before
+		background-color: $c-purple
+	.yellow-tag.listed-hypothesis:before
+		background-color: $c-yellow
+	.green-tag.listed-hypothesis:before
+		background-color: $c-lime-green
+	.light-blue-tag.listed-hypothesis:before
+		background-color: $c-light-blue
+	@media (max-width: 769px)
+		width: 100%
+		.tile
+			width: 100%
+			display: inline-block
+
+.border-cell
+	border: 1px solid $c-light-gray
+
+.border-cell-no-top
+	border: 1px solid $c-light-gray
+	border-top: none
+
+.border-cell-no-bottom
+	border: 1px solid $c-light-gray
+	border-bottom: none
+
+.vh82
+	position: relative
+	min-height: 82px
+	@media (max-width: 769px)
+		min-height: auto
+
+.vh134
+	position: relative
+	min-height: 134px
+	@media (max-width: 769px)
+		min-height: auto
+
+.vh405
+	position: relative
+	min-height: 405px
+	@media (max-width: 769px)
+		min-height: auto
+
+.vh176
+	position: relative
+	min-height: 176px
+	@media (max-width: 769px)
+		min-height: auto
+
+.vh350
+	position: relative
+	min-height: 350px
+	@media (max-width: 769px)
+		min-height: auto
+
+.vh190
+	position: relative
+	min-height: 190px
+	@media (max-width: 769px)
+		min-height: auto
+
+.cell-one-whole
+	width: 100%
+
+.cell-one-fourth
+	width: 25%
+
+.cell-one-third
+	width: 33%
+
+.cell-one-sixth
+	width: 16.5%
+
+.canvas-grid.canvas-full
+	width: 100%!important
+
+
+// CANVAS ASSISTANT STATUS
+.trigger-assistant-status
+	width: 9%
+	padding-left: 20px
+	vertical-align: top
+	+transition(opacity ease 0.3s)
+	button
+		display: block
+	@media (min-width: 1224px)
+		display: none
+	@media (max-width: 1223px)
+		display: inline-block
+	@media (max-width: $tablet_b)
+		display: none
+
+.trigger-assistant-status.hide
+	opacity: 0
+	display: none
+	overflow: hidden
+	visibility: hidden
+
+.canvas-progress-assistant
+	display: inline-block
+	vertical-align: top
+	margin-bottom: 2.5em
+	position: relative
+	max-width: 260px
+	.to-do
+		color: $c-dark-purple
+		position: relative
+		padding-left: 54px
+		font-size: 14px
+		padding-bottom: 15px
+		padding-top: 15px
+		border-bottom: 2px solid $c-input-gray
+	.to-do:last-child
+		border-bottom: none
+	.to-do:before
+		content: ''
+		position: absolute
+		background: $c-light-purple
+		left: 16px
+		top: 16px
+		+border-radius(22px)
+		height: 22px
+		width: 22px
+	.to-do.active:before
+		content: ''
+		+box-shadow(0 0px 8px 0px rgba(17, 194, 11, 0.5))
+		background: $c-green
+		left: 20px
+		top: 20px
+		height: 1em
+		width: 1em
+	.top
+		margin-bottom: 1.5em
+		button, .title
+			display: inline-block
+		.title
+			padding-left: 10px
+		.small-yellow-rounded-btn
+			position: absolute
+			right: 0
+			top: 5px
+	.up-next
+		background: $c-highlight-yellow
+	@media (max-width: 400px)
+		max-width: 100%
+	@media (min-width: $tablet_b)
+		display: none
+		position: absolute
+		opacity: 0
+		right: -200px
+		width: 25%
+		padding-left: 25px
+		visibility: hidden
+		overflow: hidden
+		.top
+			margin-bottom: 0
+		.to-do
+			padding-left: 30px
+		.to-do:before
+			left: 4px
+		.to-do.active:before
+			left: 8px
+	@media (min-width: 950px)
+		.to-do
+			padding-left: 54px
+		.to-do:before, .to-do.active:before
+			left: 20px
+	@media (min-width: 1224px)
+		opacity: 1
+		position: relative
+		display: inline-block
+		visibility: visible
+		right: inherit
+		overflow: auto
+		width: 257px
+		.top
+			margin-bottom: 1.5em
+		.to-do
+			font-size: 16px
+
+@media (min-width: $tablet_b)
+	.canvas-grid.show
+		width: 74%
+	.canvas-progress-assistant.show
+		right: 0
+		opacity: 1
+		position: absolute
+		display: inline-block!important
+		visibility: visible
+		overflow: auto

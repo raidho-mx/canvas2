@@ -1,0 +1,146 @@
+/* ALERTS, DROPDOWN MENUS */
+
+// WHITE TOOLTIP
+.white-tooltip-box
+	color: $c-black
+	background: $c-white
+	+shadow
+	padding: 50px 50px 30px 50px
+	min-height: 358px
+	position: relative
+	width: 600px
+	button.yellow-btn
+		position: absolute
+		bottom: 40px
+	h2
+		margin-bottom: 15px
+	.txt
+		padding-bottom: 90px
+		width: 430px
+
+.white-tooltip-box.right-arrow:before
+	content: " "
+	position: absolute
+	top: 40%
+	right: -10px
+	border-bottom-width: 10px
+	border-top-width: 10px
+	border-left-width: 20px
+	box-shadow: 4px -4px 14px -3px rgba(0, 0, 0, 0.2)
+	+transform(rotate(45deg))
+	width: 20px
+	z-index: 1
+	height: 20px
+	background: $c-white
+
+// YELLOW TOOLTIP: width 500px (big)
+.yellow-tooltip
+	color: $c-dark-purple
+	background: $c-highlight-yellow
+	min-height: 206px
+	padding: 50px 50px 30px 50px
+	position: relative
+	+shadow
+	width: 580px
+	h2
+		margin-bottom: 15px
+	.txt
+		width: 430px
+
+// YELLOW TOOLTIP: width 476px (medium)
+.yellow-tooltip.x2
+	width: 476px
+	.txt
+		width: 350px
+
+// YELLOW TOOLTIP: width 257px (small)
+.yellow-tooltip.x3
+	min-height: inherit
+	padding: 25px 25px 50px 25px
+	max-width: 257px
+	width: 100%
+	.txt
+		max-width: 173px
+		width: 100%
+
+// YELLOW TOOLTIP: left bottom aligned
+.yellow-tooltip.left-bottom-arrow:before
+	content: " "
+	position: absolute
+	bottom: -9px
+	left: 50px
+	border-bottom-width: 10px
+	border-top-width: 10px
+	border-left-width: 20px
+	box-shadow: 4px -4px 14px -3px rgba(0, 0, 0, 0.2)
+	+transform(rotate(130deg))
+	width: 20px
+	z-index: 1
+	min-height: 20px
+	background: $c-highlight-yellow
+
+// YELLOW TOOLTIP: right bottom aligned
+.yellow-tooltip.right-bottom-arrow:before
+	content: " "
+	position: absolute
+	bottom: -9px
+	right: 50px
+	border-bottom-width: 10px
+	border-top-width: 10px
+	border-left-width: 20px
+	box-shadow: 4px -4px 14px -3px rgba(0, 0, 0, 0.2)
+	+transform(rotate(130deg))
+	width: 20px
+	z-index: 1
+	height: 20px
+	background: $c-highlight-yellow
+
+// DROPDOWN MENU
+.dropdown-menu
+	+border-radius(5px)
+	color: $c-white
+	height: 127px
+	position: relative
+	+shadow
+	width: 122px
+	.scroll-content-white, .scroll-content
+		height: 120px
+		.mCSB_inside > .mCSB_container
+			margin: 0
+		.mCSB_scrollTools
+			right: -6px
+	ul
+		padding: 15px 15px 0 15px
+	li
+		cursor: pointer
+		font-size: 14px
+		display: inline-block
+		margin-bottom: 5px
+	li:hover
+		font-weight: bold
+
+.dropdown-menu.bg-dark-purple:after
+	content: " "
+	top: -8px
+	+horizontal-center
+	width: 0
+	height: 0
+	border-left: 4px solid transparent
+	border-right: 4px solid transparent
+	border-bottom: 8px solid $c-dark-purple
+	z-index: 1
+
+.dropdown-menu.bg-soft-orange
+	color: $c-dark-purple
+	font-weight: bold
+
+.dropdown-menu.bg-soft-orange:after
+	content: " "
+	top: -8px
+	+horizontal-center
+	width: 0
+	height: 0
+	border-left: 4px solid transparent
+	border-right: 4px solid transparent
+	border-bottom: 8px solid $c-soft-orange
+	z-index: 1
