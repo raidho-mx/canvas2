@@ -15,6 +15,8 @@ Tests | :rotating_light: `:rotating_light:`
 
 ## Canvas Grid:
 
+BUSINESS MODEL CANVAS http://testbed.raidho.mx/canvas2/canvas-business-model.html
+
 EXO http://testbed.raidho.mx/canvas2/canvas-exo.html
 
 LEAN http://testbed.raidho.mx/canvas2/canvas-lean.html
