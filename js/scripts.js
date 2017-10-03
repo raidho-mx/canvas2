@@ -50,6 +50,7 @@ $(window).resize(function() {
 $('.trigger-assistant-status .question-mark-btn').click(function(){
 	$('.canvas-progress-assistant').addClass('show');
 	$('.canvas-grid').addClass('show');
+	$('.canvas-grid-v2').addClass('show');
 	$('.main-content-block').addClass('show');
 	$('.trigger-assistant-status').addClass('hide');
 });
@@ -57,6 +58,7 @@ $('.trigger-assistant-status .question-mark-btn').click(function(){
 $('.canvas-progress-assistant .question-mark-btn').click(function(){
 	$('.canvas-progress-assistant').removeClass('show');
 	$('.canvas-grid').removeClass('show');
+	$('.canvas-grid-v2').removeClass('show');
 	$('.main-content-block').removeClass('show');
 	$('.trigger-assistant-status').removeClass('hide');
 });
