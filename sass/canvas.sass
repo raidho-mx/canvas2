@@ -89,6 +89,7 @@
 	width: 90%
 	.cell-content
 		height: 100%
+		width: 100%
 	.cell-content:hover .right-top
 		opacity: 1
 		visibility: visible
@@ -100,7 +101,7 @@
 		visibility: hidden
 	.top
 		color: $c-canvas-gray
-		padding: 10px
+		padding: 10px 10px 30px 10px
 		width: 75%
 	.comments
 		color: $dark-purple-opacity
@@ -126,32 +127,8 @@
 		color: $c-dark-purple
 	.listed-hypothesis.inactive
 		opacity: 0.7
-	.listed-hypothesis:before
-		content: ''
-		height: 100%
-		width: 5px
-		left: 0
-		position: absolute
 	.listed-hypothesis > p
 		display: inline-block
-	.tag
-		padding-left: 14px
-	.orange-tag.listed-hypothesis:before
-		background-color: $c-orange
-	.light-blue-tag.listed-hypothesis:before
-		background-color: $c-light-blue
-	.blue-tag.listed-hypothesis:before
-		background-color: $c-blue
-	.red-tag.listed-hypothesis:before
-		background-color: $c-red
-	.purple-tag.listed-hypothesis:before
-		background-color: $c-purple
-	.yellow-tag.listed-hypothesis:before
-		background-color: $c-yellow
-	.green-tag.listed-hypothesis:before
-		background-color: $c-lime-green
-	.light-blue-tag.listed-hypothesis:before
-		background-color: $c-light-blue
 	.color-tags
 		width: 99%
 		margin-bottom: 6px
@@ -168,9 +145,9 @@
 		padding-right: 7px
 	.txt p
 		display: inline
-	.listed-hypothesis .txt:hover .edit-hypothesis,
-	.edit-hypothesis:hover
+	.listed-hypothesis .txt:hover .edit-hypothesis
 		opacity: 1
+		visibility: visible
 	.category
 		cursor: default
 		position: relative
@@ -234,6 +211,7 @@
 		background: $c-soft-orange
 	.edit-hypothesis
 		opacity: 0
+		visibility: hidden
 		position: absolute
 		top: 0
 		right: -68px
