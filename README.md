@@ -17,6 +17,8 @@ Tests | :rotating_light: `:rotating_light:`
 
 BUSINESS MODEL CANVAS http://testbed.raidho.mx/canvas2/canvas-business-model.html
 
+SYSTEM THINKING http://testbed.raidho.mx/canvas2/canvas-system.html
+
 EXO http://testbed.raidho.mx/canvas2/canvas-exo.html
 
 LEAN http://testbed.raidho.mx/canvas2/canvas-lean.html
