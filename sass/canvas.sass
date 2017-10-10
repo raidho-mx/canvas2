@@ -47,6 +47,9 @@
 	.tile.is-fifth
 		flex: none
 		width: 20%
+	.tile.is-two-fifths
+		flex: none
+		width: 40%
 	.tile.is-3
 		flex: none
 		width: 25%
@@ -235,40 +238,6 @@
 		z-index: 0
 		min-height: 10px
 		background: $c-input-gray
-	.help-icon
-		color: $c-white
-		display: inline-block
-		font-weight: bolder
-		font-size: 14px
-		position: relative
-		width: 18px
-		text-align: center
-		height: 18px
-		+border-radius(18px)
-		background: $c-soft-orange
-		img
-			position: absolute
-			left: 1px
-			right: 0
-			margin: 0 auto
-			top: 4px
-	.add-icon
-		text-align: center
-		display: inline-block
-		color: $c-white
-		font-weight: bolder
-		font-size: 14px
-		position: relative
-		width: 18px
-		height: 18px
-		+border-radius(18px)
-		background: $c-cyan
-		img
-			position: absolute
-			left: 0px
-			right: 0
-			margin: 0 auto
-			top: 4px
 	@media (max-width: 769px)
 		width: 100%
 		.tile
@@ -377,6 +346,15 @@
 	overflow: hidden
 	visibility: hidden
 
+.trigger-assistant-status.canvas-progress
+	.help-icon
+		border: none!important
+		color: $c-white!important
+		vertical-align: middle
+		height: 18px
+		width: 18px
+
+
 .canvas-progress-assistant
 	display: inline-block
 	vertical-align: top
@@ -458,6 +436,49 @@
 			margin-bottom: 1.5em
 		.to-do
 			font-size: 16px
+
+.canvas-progress-assistant.canvas-progress
+	.to-do
+		border-bottom: none
+		font-weight: bolder
+		padding-left: 40px
+	.to-do:before
+		background: $c-white
+		border: 2px solid $c-green
+		height: 16px
+		width: 16px
+		left: 0
+	.to-do.active:before
+		+box-shadow(none)
+		background: $c-green
+		height: 16px
+		width: 16px
+	.to-do:after
+		content: ''
+		background: $c-green
+		position: absolute
+		height: 100%
+		width: 2px
+		left: 9px
+		top: 28px
+		z-index: -1
+	.to-do:last-child:after
+		content: none
+	.help-icon
+		border: none!important
+		color: $c-white!important
+		vertical-align: middle
+		height: 18px
+		width: 18px
+	@media (max-width: 950px)
+		.to-do:before
+			left: 3px
+		.to-do:after
+			left: 12px
+		.top .small-yellow-rounded-btn
+			display: inline-block
+			position: relative
+
 
 @media (min-width: $tablet_b)
 	.canvas-grid-v2.show

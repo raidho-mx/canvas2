@@ -19,8 +19,15 @@ BUSINESS MODEL CANVAS http://testbed.raidho.mx/canvas2/canvas-business-model.htm
 
 SYSTEM THINKING http://testbed.raidho.mx/canvas2/canvas-system.html
 
-EXO http://testbed.raidho.mx/canvas2/canvas-exo.html
+EXO CANVAS http://testbed.raidho.mx/canvas2/canvas-exo.html
 
-LEAN http://testbed.raidho.mx/canvas2/canvas-lean.html
+LEAN CANVAS http://testbed.raidho.mx/canvas2/canvas-lean.html
 
-MISSION http://testbed.raidho.mx/canvas2/canvas-mission.html
+MISSION CANVAS http://testbed.raidho.mx/canvas2/canvas-mission.html
+
+SOCIAL CANVAS http://testbed.raidho.mx/canvas2/canvas-social.html
+
+
+## Modals:
+
+ALL MODALS BY NOW http://testbed.raidho.mx/canvas2/pop-ups.html
