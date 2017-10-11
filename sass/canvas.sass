@@ -84,7 +84,12 @@
 .canvas-wrap
 	height: auto
 	@media (min-width: 800px)
+		overflow-y: scroll
 		height: 700px
+
+.canvas-grid-v2.full-width
+	width: 100%
+	max-width: inherit
 
 .canvas-grid-v2
 	display: inline-block
@@ -106,6 +111,8 @@
 		color: $c-canvas-gray
 		padding: 10px 10px 30px 10px
 		width: 75%
+		> p
+			display: inline
 	.comments
 		color: $dark-purple-opacity
 		position: absolute
@@ -130,8 +137,6 @@
 		color: $c-dark-purple
 	.listed-hypothesis.inactive
 		opacity: 0.7
-	// .listed-hypothesis > p
-	// 	display: inline-block
 	.color-tags
 		width: 99%
 		margin-bottom: 6px
@@ -239,6 +244,7 @@
 		min-height: 10px
 		background: $c-input-gray
 	@media (max-width: 769px)
+		margin-bottom: 40px
 		width: 100%
 		.tile
 			width: 100%
@@ -254,6 +260,11 @@
 .border-cell-no-bottom
 	border: 1px solid $c-light-gray
 	border-bottom: none
+
+.border-cell-middle
+	border: 1px solid $c-light-gray
+	border-bottom: none
+	border-top: none
 
 .vh82
 	position: relative

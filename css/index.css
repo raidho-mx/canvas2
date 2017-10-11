@@ -3167,7 +3167,12 @@ ul.color-picker-list {
   height: auto; }
   @media (min-width: 800px) {
     .canvas-wrap {
+      overflow-y: scroll;
       height: 700px; } }
+
+.canvas-grid-v2.full-width {
+  width: 100%;
+  max-width: inherit; }
 
 .canvas-grid-v2 {
   display: inline-block;
@@ -3189,6 +3194,8 @@ ul.color-picker-list {
     color: #8E8B8B;
     padding: 10px 10px 30px 10px;
     width: 75%; }
+    .canvas-grid-v2 .top > p {
+      display: inline; }
   .canvas-grid-v2 .comments {
     color: rgba(41, 36, 78, 0.4);
     position: absolute;
@@ -3333,6 +3340,7 @@ ul.color-picker-list {
     background: #F0F0F0; }
   @media (max-width: 769px) {
     .canvas-grid-v2 {
+      margin-bottom: 40px;
       width: 100%; }
       .canvas-grid-v2 .tile {
         width: 100%;
@@ -3348,6 +3356,11 @@ ul.color-picker-list {
 .border-cell-no-bottom {
   border: 1px solid #EFEFEF;
   border-bottom: none; }
+
+.border-cell-middle {
+  border: 1px solid #EFEFEF;
+  border-bottom: none;
+  border-top: none; }
 
 .vh82 {
   position: relative;
