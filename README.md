@@ -27,7 +27,11 @@ MISSION CANVAS http://testbed.raidho.mx/canvas2/canvas-mission.html
 
 SOCIAL CANVAS http://testbed.raidho.mx/canvas2/canvas-social.html
 
+SCALING UP PEOPLE CANVAS http://testbed.raidho.mx/canvas2/scaling-up-people.html
+
+SCALING UP PROCESS CANVAS http://testbed.raidho.mx/canvas2/scaling-up-process.html
+
 
 ## Modals:
 
-ALL MODALS BY NOW http://testbed.raidho.mx/canvas2/pop-ups.html
+MODALS http://testbed.raidho.mx/canvas2/pop-ups.html
