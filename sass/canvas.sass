@@ -85,7 +85,20 @@
 	height: auto
 	@media (min-width: 800px)
 		overflow-y: scroll
+		overflow-x: hidden
 		height: 700px
+
+.canvas-wrap.scaling-canvas
+	height: auto
+	@media (min-width: 800px)
+		overflow-y: inherit
+		overflow-x: hidden
+		height: auto
+
+.wrap.canvas-wrap
+	max-width: inherit
+	margin: 0 auto
+	width: 90%
 
 .canvas-grid-v2.full-width
 	width: 100%
@@ -93,8 +106,9 @@
 
 .canvas-grid-v2
 	display: inline-block
-	max-width: 812px
-	width: 90%
+	// max-width: 812px
+	max-width: inherit
+	width: 80%
 	.cell-content
 		height: 100%
 		width: 100%
@@ -150,7 +164,7 @@
 	.txt
 		float: left
 		position: relative
-		padding-right: 14px
+		padding-right: 20px
 	.txt p
 		display: inline
 	.listed-hypothesis .txt:hover .edit-hypothesis
@@ -165,9 +179,9 @@
 		text-align: center
 		top: 4px
 		font-weight: bolder
-		color: $c-white
+		color: $c-dark-purple
 		+border-radius(20px)
-		background: #9B9B9B
+		background: $c-input-gray
 		height: 18px
 		width: 18px
 	.category > p
@@ -222,9 +236,9 @@
 		visibility: hidden
 		position: absolute
 		top: -4px
-		right: -83px
+		right: -78px
 		background: $c-input-gray
-		padding: 6px 18px
+		padding: 5px 14px
 		z-index: 10
 		+border-radius(30px)
 		.icon
@@ -233,16 +247,22 @@
 			padding-right: 13px
 		.icon:last-child
 			padding-right: 0
+		.icon img
+			height: 12px
+			top: 1px
+			position: relative
 	.edit-hypothesis:before
 		content: " "
 		position: absolute
-		top: 12px
-		left: -3px
+		top: 11px
+		left: -2px
 		+transform(rotate(130deg))
 		width: 10px
 		z-index: 0
 		min-height: 10px
 		background: $c-input-gray
+	@media (max-width: 800px)
+		width: 100%
 	@media (max-width: 769px)
 		margin-bottom: 40px
 		width: 100%
@@ -412,14 +432,14 @@
 	@media (max-width: 400px)
 		max-width: 100%
 	@media (min-width: $tablet_b)
-		display: none
-		position: absolute
-		opacity: 0
-		right: -200px
-		width: 25%
-		padding-left: 25px
-		visibility: hidden
-		overflow: hidden
+		// display: none
+		// position: absolute
+		// opacity: 0
+		// right: -200px
+		width: 19%
+		padding-left: 2%
+		// visibility: hidden
+		// overflow: hidden
 		.top
 			margin-bottom: 0
 		.to-do
@@ -440,7 +460,8 @@
 		visibility: visible
 		right: inherit
 		overflow: auto
-		width: 257px
+		max-width: 257px
+		width: 19%
 		.top
 			margin-bottom: 1.5em
 		.to-do
