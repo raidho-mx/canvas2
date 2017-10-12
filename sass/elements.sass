@@ -6,19 +6,20 @@ header
 	color: $c-white
 	float: left
 	width: 100%
+	padding: 1.25em 0
 	margin-bottom: 2.5em
 	.wrap
 		display: block
-		overflow: hidden
+		// overflow: hidden
 	a
 		color: $c-white
 	.logo
 		display: inline-block
 		margin-right: 1.25em
 		vertical-align: top
-		margin-top: 1.25em
+		// margin-top: 1.25em
 	.breadcrumbs
-		padding: 1em 0
+		// padding: 1em 0
 		display: inline-block
 		width: 80%
 	.breadcrumbs li
@@ -35,7 +36,9 @@ header
 	.nav-tools img
 		vertical-align: middle
 	.nav-tools li
-		padding: 1.25em 0
+		// padding: 1.25em 0
+		margin-right: inherit
+		padding-right: 10px
 		padding-left: 20px
 		vertical-align: middle
 		display: inline-block
@@ -51,7 +54,7 @@ header
 		width: 120px
 	.profile-btn .bg-img
 		+bg-img
-		right: 0
+		right: -40px
 		+border-radius(40px)
 		height: 30px
 		width: 30px
@@ -63,14 +66,14 @@ header
 	@media (min-width: $tablet_b)
 		.nav-tools
 			text-align: right
-		.nav-tools li
-			height: 66px
+		// .nav-tools li
+		// 	height: 66px
 		.profile-btn .bg-img
 			height: 40px
 			width: 40px
 			top: -8px
 		.breadcrumbs
-			padding: 1em 0
+			// padding: 1em 0
 			width: auto
 		.breadcrumbs li
 			margin-bottom: 0

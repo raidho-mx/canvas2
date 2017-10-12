@@ -1955,19 +1955,17 @@ header {
   color: #FFFFFF;
   float: left;
   width: 100%;
+  padding: 1.25em 0;
   margin-bottom: 2.5em; }
   header .wrap {
-    display: block;
-    overflow: hidden; }
+    display: block; }
   header a {
     color: #FFFFFF; }
   header .logo {
     display: inline-block;
     margin-right: 1.25em;
-    vertical-align: top;
-    margin-top: 1.25em; }
+    vertical-align: top; }
   header .breadcrumbs {
-    padding: 1em 0;
     display: inline-block;
     width: 80%; }
   header .breadcrumbs li {
@@ -1984,7 +1982,8 @@ header {
   header .nav-tools img {
     vertical-align: middle; }
   header .nav-tools li {
-    padding: 1.25em 0;
+    margin-right: inherit;
+    padding-right: 10px;
     padding-left: 20px;
     vertical-align: middle;
     display: inline-block; }
@@ -2002,7 +2001,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    right: 0;
+    right: -40px;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     border-radius: 40px;
@@ -2016,14 +2015,11 @@ header {
   @media (min-width: 800px) {
     header .nav-tools {
       text-align: right; }
-    header .nav-tools li {
-      height: 66px; }
     header .profile-btn .bg-img {
       height: 40px;
       width: 40px;
       top: -8px; }
     header .breadcrumbs {
-      padding: 1em 0;
       width: auto; }
     header .breadcrumbs li {
       margin-bottom: 0; }
