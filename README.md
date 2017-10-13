@@ -32,6 +32,21 @@ SCALING UP PEOPLE CANVAS http://testbed.raidho.mx/canvas2/scaling-up-people.html
 SCALING UP PROCESS CANVAS http://testbed.raidho.mx/canvas2/scaling-up-process.html
 
 
+## PROGRESS BAR HOVER EXAMPLES:
+
+DESIRABILITY http://testbed.raidho.mx/canvas2/canvas-business-model.html
+
+FEASABILITY http://testbed.raidho.mx/canvas2/bmc-feasability.html
+
+VIABILITY http://testbed.raidho.mx/canvas2/bmc-viability.html
+
+PRODUCT MARKET FIT http://testbed.raidho.mx/canvas2/bmc-product-market-fit.html
+
+PROBLEM SOLUTION FIT http://testbed.raidho.mx/canvas2/bmc-problem-solution-fit.html
+
+BUSINESS MODEL FIT http://testbed.raidho.mx/canvas2/bmc-business-model-fit.html
+
+
 ## Modals:
 
 MODALS http://testbed.raidho.mx/canvas2/pop-ups.html
