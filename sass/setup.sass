@@ -31,6 +31,7 @@ $c-purple: #B676EC
 // BLUES
 $c-light-blue: #6BC7FF
 $c-blue: #5475E9
+$c-cornflower: #4A90E2
 // GREENS
 $c-lime-green: #A1D336
 $c-soft-green: #32D59A
@@ -609,6 +610,44 @@ input[type="submit"].login-btn
 	display: inline-block
 	@media (max-width: $tablet_b)
 		max-width: 290px
+
+.blue-check-input
+	display: inline-block
+	margin-right: 6px
+	position: relative
+	top: 0px
+	label, p
+		display: inline-block
+	input
+		+border-radius(17px)
+		cursor: pointer
+		display: inline-block
+		border: 1px solid $c-dark-gray
+		background: $c-white
+		height: 16px
+		top: 2px
+		position: relative
+		padding: 0
+		width: 16px
+	input:checked
+		border: 1px solid $c-dark-gray
+	input:checked ~ span
+		opacity: 1
+		height: 8px
+		left: 4px
+		top: 7px
+		width: 8px
+	.check
+		+border-radius(11px)
+		background-color: #4A90E2
+		display: block
+		height: 8px
+		left: 4px
+		opacity: 0
+		position: absolute
+		pointer-events: none
+		top: 4px
+		width: 8px
 
 .bg-purple-radio-input
 	input
