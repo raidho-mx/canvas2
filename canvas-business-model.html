@@ -25,10 +25,14 @@
 						<li><a href="#"><strong>Week 7</strong></a><button class="down-arrow-x1-btn"></button></li>
 					</ul>
 				</div>
+				<div class="open-accordion">
+					<button type="button" name="button"><img src="img/icon-open-accordion.svg" alt=""></button>
+				</div>
 			</div>
 			<div class="two-col">
 				<div class="nav-tools">
 					<ul>
+						<li><button class="menu-icon-btn"><img src="img/icon-listed-projects.svg" alt=""></button></li>
 						<li><button class="menu-icon-btn"><img src="img/icon-activity.svg" alt=""></button></li>
 						<li><button class="menu-icon-btn"><img src="img/icon-chat.svg" alt=""></button></li>
 						<li><button class="menu-icon-btn"><img src="img/icon-invite.svg" alt=""></button></li>
@@ -41,42 +45,190 @@
 
 <section>
 	<div class="wrap canvas-wrap">
+		<div class="one-col mb20">
+			<div class="inline columns">
+				<div class="blue-check-input">
+					<input type="checkbox" name="untested" value="customer">
+					<span class="check"></span>
+					<p class="c-dark-purple serif">Untested (10)</p>
+				</div>
+			</div>
+			<div class="inline columns">
+				<div class="blue-check-input">
+					<input type="checkbox" name="validated" value="customer">
+					<span class="check"></span>
+					<p class="c-dark-purple serif">Validated (5)</p>
+				</div>
+			</div>
+			<div class="inline columns">
+				<div class="blue-check-input">
+					<input type="checkbox" name="invalidated" value="customer">
+					<span class="check"></span>
+					<p class="c-dark-purple serif">Invalidated (5)</p>
+				</div>
+			</div>
+			<div class="inline columns">
+				<div class="blue-check-input">
+					<input type="checkbox" name="all" value="customer">
+					<span class="check"></span>
+					<p class="c-dark-purple serif">All (20)</p>
+				</div>
+			</div>
+		</div>
 		<div class="canvas-grid-v2">
 			<!-- first row -->
 			<div class="tile border-cell-no-bottom">
-				<div class="tile is-fifth is-parent is-vertical border-cell">
-					<div class="tile">
-						<div class="vh305 tile one-col">
-							<div class="cell-content">
-								<div class="top">
-									<p class="txt11 strong serif">Key Partners</p>
-									<div class="right-top">
-										<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
-										<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
+				<!-- 40% -->
+				<div class="tile is-two-fifths">
+					<div class="tile is-6 is-parent is-vertical border-cell">
+						<div class="tile">
+							<div class="vh305 tile one-col">
+								<div class="cell-content">
+									<div class="top">
+										<p class="txt11 strong serif">Key Partners</p>
+										<div class="right-top">
+											<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
+											<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="listed-hypothesis active">
+											<div class="color-tags">
+												<div class="bg-yellow"></div>
+												<div class="bg-orange"></div>
+												<div class="bg-red"></div>
+												<div class="bg-blue"></div>
+												<div class="bg-purple"></div>
+												<div class="bg-yellow"></div>
+												<div class="bg-green"></div>
+											</div>
+											<div class="txt">
+												<p>Food Producers</p>
+												<div class="category">
+													<div class="category-tooltip">
+													<p>Keep</p></div>
+													<p>K</p>
+												</div>
+												<div class="edit-hypothesis">
+													<div class="icon"><img src="img/icon-check.svg" alt=""></div>
+													<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
+													<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="bottom">
-									<div class="listed-hypothesis active">
-										<div class="color-tags">
-											<div class="bg-yellow"></div>
-											<div class="bg-orange"></div>
-											<div class="bg-red"></div>
-											<div class="bg-blue"></div>
-											<div class="bg-purple"></div>
-											<div class="bg-yellow"></div>
-											<div class="bg-green"></div>
-										</div>
-										<div class="txt">
-											<p>Food Producers</p>
-											<div class="category">
-												<div class="category-tooltip">
-												<p>Keep</p></div>
-												<p>K</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tile is-6 is-vertical">
+						<div class="tile border-cell">
+							<div class="tile">
+								<div class="vh82 one-col">
+									<div class="cell-content">
+										<div class="top">
+											<p class="txt11 strong serif">Key Activities</p>
+											<div class="right-top">
+												<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
+												<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
 											</div>
-											<div class="edit-hypothesis">
-												<div class="icon"><img src="img/icon-check.svg" alt=""></div>
-												<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
-												<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+										</div>
+										<div class="bottom">
+											<div class="listed-hypothesis active">
+												<div class="txt">
+													<p>Buying Supplies</p>
+													<div class="category">
+														<div class="category-tooltip"><p>Keep</p></div>
+														<p>K</p>
+													</div>
+													<div class="edit-hypothesis">
+														<div class="icon"><img src="img/icon-check.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+													</div>
+												</div>
+											</div>
+											<div class="listed-hypothesis active">
+												<div class="color-tags">
+													<div class="bg-blue"></div>
+												</div>
+												<div class="txt">
+													<p>Marketing</p>
+													<div class="category">
+														<div class="category-tooltip"><p>Keep</p></div>
+														<p>K</p>
+													</div>
+													<div class="edit-hypothesis">
+														<div class="icon"><img src="img/icon-check.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+													</div>
+												</div>
+											</div>
+											<div class="listed-hypothesis active">
+												<div class="txt">
+													<p>Platform Management</p>
+													<div class="category">
+														<div class="category-tooltip"><p>Keep</p></div>
+														<p>K</p>
+													</div>
+													<div class="edit-hypothesis">
+														<div class="icon"><img src="img/icon-check.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tile border-cell">
+							<div class="tile">
+								<div class="vh82 one-col">
+									<div class="cell-content">
+										<div class="top">
+											<p class="txt11 strong serif">Key Resources</p>
+											<div class="right-top">
+												<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
+												<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
+											</div>
+										</div>
+										<div class="bottom">
+											<div class="listed-hypothesis active">
+												<div class="color-tags">
+													<div class="bg-purple"></div>
+													<div class="bg-red"></div>
+												</div>
+												<div class="txt">
+													<p>Digital Platform</p>
+													<div class="category">
+														<div class="category-tooltip"><p>Keep</p></div>
+														<p>K</p>
+													</div>
+													<div class="edit-hypothesis">
+														<div class="icon"><img src="img/icon-check.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+													</div>
+												</div>
+											</div>
+											<div class="listed-hypothesis active">
+												<div class="txt">
+													<p>Organic Food Supply</p>
+													<div class="category">
+														<div class="category-tooltip"><p>Keep</p></div>
+														<p>K</p>
+													</div>
+													<div class="edit-hypothesis">
+														<div class="icon"><img src="img/icon-check.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -86,19 +238,51 @@
 					</div>
 				</div>
 
-				<div class="tile is-fifth is-vertical">
-					<div class="tile border-cell">
+				<!-- 60% -->
+				<div class="tile is-two-thirds border-cell-blue">
+					<div class="tile is-4 is-parent is-vertical border-cell">
 						<div class="tile">
-							<div class="vh82 one-col">
+							<div class="vh305 one-col">
 								<div class="cell-content">
 									<div class="top">
-										<p class="txt11 strong serif">Key Activities</p>
+										<p class="txt11 strong serif">Value proposition</p>
 										<div class="right-top">
 											<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
 											<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
 										</div>
 									</div>
 									<div class="bottom">
+										<div class="listed-hypothesis active">
+											<div class="txt">
+												<p> Improve’s pet health</p>
+												<div class="category">
+													<div class="category-tooltip"><p>Keep</p></div>
+													<p>K</p>
+												</div>
+												<div class="edit-hypothesis">
+													<div class="icon"><img src="img/icon-check.svg" alt=""></div>
+													<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
+													<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+												</div>
+											</div>
+										</div>
+										<div class="listed-hypothesis active">
+											<div class="color-tags">
+												<div class="bg-purple"></div>
+											</div>
+											<div class="txt">
+												<p> Comfortable & Time Saver</p>
+												<div class="category">
+													<div class="category-tooltip"><p>Keep</p></div>
+													<p>K</p>
+												</div>
+												<div class="edit-hypothesis">
+													<div class="icon"><img src="img/icon-check.svg" alt=""></div>
+													<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
+													<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+												</div>
+											</div>
+										</div>
 										<div class="listed-hypothesis active">
 											<div class="txt">
 												<p>Buying Supplies</p>
@@ -115,22 +299,8 @@
 										</div>
 										<div class="listed-hypothesis active">
 											<div class="color-tags">
-												<div class="bg-blue"></div>
+												<div class="bg-purple"></div><div class="bg-red"></div>
 											</div>
-											<div class="txt">
-												<p>Marketing</p>
-												<div class="category">
-													<div class="category-tooltip"><p>Keep</p></div>
-													<p>K</p>
-												</div>
-												<div class="edit-hypothesis">
-													<div class="icon"><img src="img/icon-check.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
-												</div>
-											</div>
-										</div>
-										<div class="listed-hypothesis active">
 											<div class="txt">
 												<p>Platform Management</p>
 												<div class="category">
@@ -150,47 +320,34 @@
 						</div>
 					</div>
 
-					<div class="tile border-cell">
-						<div class="tile">
-							<div class="vh82 one-col">
-								<div class="cell-content">
-									<div class="top">
-										<p class="txt11 strong serif">Key Resources</p>
-										<div class="right-top">
-											<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
-											<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
-										</div>
-									</div>
-									<div class="bottom">
-										<div class="listed-hypothesis active">
-											<div class="color-tags">
-												<div class="bg-purple"></div>
-												<div class="bg-red"></div>
-											</div>
-											<div class="txt">
-												<p>Digital Platform</p>
-												<div class="category">
-													<div class="category-tooltip"><p>Keep</p></div>
-													<p>K</p>
-												</div>
-												<div class="edit-hypothesis">
-													<div class="icon"><img src="img/icon-check.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
-												</div>
+					<div class="tile is-4 is-vertical">
+						<div class="tile border-cell">
+							<div class="tile">
+								<div class="vh82 one-col">
+									<div class="cell-content">
+										<div class="top">
+											<p class="txt11 strong serif">Customer Relationships</p>
+											<div class="right-top">
+												<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
+												<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
 											</div>
 										</div>
-										<div class="listed-hypothesis active">
-											<div class="txt">
-												<p>Organic Food Supply</p>
-												<div class="category">
-													<div class="category-tooltip"><p>Keep</p></div>
-													<p>K</p>
+										<div class="bottom">
+											<div class="listed-hypothesis active">
+												<div class="color-tags">
+													<div class="bg-green"></div><div class="bg-yellow"></div>
 												</div>
-												<div class="edit-hypothesis">
-													<div class="icon"><img src="img/icon-check.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+												<div class="txt">
+													<p>Frequent Customer Program</p>
+													<div class="category">
+														<div class="category-tooltip"><p>Keep</p></div>
+														<p>K</p>
+													</div>
+													<div class="edit-hypothesis">
+														<div class="icon"><img src="img/icon-check.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -198,116 +355,34 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
 
-				<div class="tile is-fifth is-parent is-vertical border-cell">
-					<div class="tile">
-						<div class="vh305 one-col">
-							<div class="cell-content">
-								<div class="top">
-									<p class="txt11 strong serif">Value proposition</p>
-									<div class="right-top">
-										<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
-										<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
-									</div>
-								</div>
-								<div class="bottom">
-									<div class="listed-hypothesis active">
-										<div class="txt">
-											<p> Improve’s pet health</p>
-											<div class="category">
-												<div class="category-tooltip"><p>Keep</p></div>
-												<p>K</p>
-											</div>
-											<div class="edit-hypothesis">
-												<div class="icon"><img src="img/icon-check.svg" alt=""></div>
-												<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
-												<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+						<div class="tile border-cell">
+							<div class="tile">
+								<div class="vh82 one-col">
+									<div class="cell-content">
+										<div class="top">
+											<p class="txt11 strong serif">Channels</p>
+											<div class="right-top">
+												<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
+												<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
 											</div>
 										</div>
-									</div>
-									<div class="listed-hypothesis active">
-										<div class="color-tags">
-											<div class="bg-purple"></div>
-										</div>
-										<div class="txt">
-											<p> Comfortable & Time Saver</p>
-											<div class="category">
-												<div class="category-tooltip"><p>Keep</p></div>
-												<p>K</p>
-											</div>
-											<div class="edit-hypothesis">
-												<div class="icon"><img src="img/icon-check.svg" alt=""></div>
-												<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
-												<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
-											</div>
-										</div>
-									</div>
-									<div class="listed-hypothesis active">
-										<div class="txt">
-											<p>Buying Supplies</p>
-											<div class="category">
-												<div class="category-tooltip"><p>Keep</p></div>
-												<p>K</p>
-											</div>
-											<div class="edit-hypothesis">
-												<div class="icon"><img src="img/icon-check.svg" alt=""></div>
-												<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
-												<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
-											</div>
-										</div>
-									</div>
-									<div class="listed-hypothesis active">
-										<div class="color-tags">
-											<div class="bg-purple"></div><div class="bg-red"></div>
-										</div>
-										<div class="txt">
-											<p>Platform Management</p>
-											<div class="category">
-												<div class="category-tooltip"><p>Keep</p></div>
-												<p>K</p>
-											</div>
-											<div class="edit-hypothesis">
-												<div class="icon"><img src="img/icon-check.svg" alt=""></div>
-												<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
-												<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="tile is-fifth is-vertical">
-					<div class="tile border-cell">
-						<div class="tile">
-							<div class="vh82 one-col">
-								<div class="cell-content">
-									<div class="top">
-										<p class="txt11 strong serif">Customer Relationships</p>
-										<div class="right-top">
-											<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
-											<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
-										</div>
-									</div>
-									<div class="bottom">
-										<div class="listed-hypothesis active">
-											<div class="color-tags">
-												<div class="bg-green"></div><div class="bg-yellow"></div>
-											</div>
-											<div class="txt">
-												<p>Frequent Customer Program</p>
-												<div class="category">
-													<div class="category-tooltip"><p>Keep</p></div>
-													<p>K</p>
+										<div class="bottom">
+											<div class="listed-hypothesis active">
+												<div class="color-tags">
+													<div class="bg-red"></div><div class="bg-yellow"></div><div class="bg-green"></div><div class="bg-soft-orange"></div><div class="bg-purple"></div>
 												</div>
-												<div class="edit-hypothesis">
-													<div class="icon"><img src="img/icon-check.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+												<div class="txt">
+													<p>Online Sale</p>
+													<div class="category">
+														<div class="category-tooltip"><p>Keep</p></div>
+														<p>K</p>
+													</div>
+													<div class="edit-hypothesis">
+														<div class="icon"><img src="img/icon-check.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -317,69 +392,34 @@
 						</div>
 					</div>
 
-					<div class="tile border-cell">
-						<div class="tile">
-							<div class="vh82 one-col">
-								<div class="cell-content">
-									<div class="top">
-										<p class="txt11 strong serif">Channels</p>
-										<div class="right-top">
-											<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
-											<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
-										</div>
-									</div>
-									<div class="bottom">
-										<div class="listed-hypothesis active">
-											<div class="color-tags">
-												<div class="bg-red"></div><div class="bg-yellow"></div><div class="bg-green"></div><div class="bg-soft-orange"></div><div class="bg-purple"></div>
-											</div>
-											<div class="txt">
-												<p>Online Sale</p>
-												<div class="category">
-													<div class="category-tooltip"><p>Keep</p></div>
-													<p>K</p>
-												</div>
-												<div class="edit-hypothesis">
-													<div class="icon"><img src="img/icon-check.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
-												</div>
+					<div class="tile is-4 is-vertical">
+						<div class="tile border-cell">
+							<div class="tile">
+								<div class="vh350 one-col">
+									<div class="cell-content">
+										<div class="top">
+											<p class="txt11 strong serif">Customer Segments</p>
+											<div class="right-top">
+												<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
+												<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
 											</div>
 										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="tile is-fifth is-vertical">
-					<div class="tile border-cell">
-						<div class="tile">
-							<div class="vh350 one-col">
-								<div class="cell-content">
-									<div class="top">
-										<p class="txt11 strong serif">Customer Segments</p>
-										<div class="right-top">
-											<button class="add-icon"><img src="img/icon-white-plus.svg" alt=""></button>
-											<button class="help-icon"><img src="img/icon-white-question.svg" alt=""></button>
-										</div>
-									</div>
-									<div class="bottom">
-										<div class="listed-hypothesis active">
-											<div class="color-tags">
-												<div class="bg-green"></div>
-											</div>
-											<div class="txt">
-												<p>Dow Owners</p>
-												<div class="category">
-													<div class="category-tooltip"><p>Keep</p></div>
-													<p>K</p>
+										<div class="bottom">
+											<div class="listed-hypothesis active">
+												<div class="color-tags">
+													<div class="bg-green"></div>
 												</div>
-												<div class="edit-hypothesis">
-													<div class="icon"><img src="img/icon-check.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
-													<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+												<div class="txt">
+													<p>Dow Owners</p>
+													<div class="category">
+														<div class="category-tooltip"><p>Keep</p></div>
+														<p>K</p>
+													</div>
+													<div class="edit-hypothesis">
+														<div class="icon"><img src="img/icon-check.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-cross.svg" alt=""></div>
+														<div class="icon"><img src="img/icon-edit.svg" alt=""></div>
+													</div>
 												</div>
 											</div>
 										</div>
