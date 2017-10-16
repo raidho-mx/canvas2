@@ -32,7 +32,7 @@ SCALING UP PEOPLE CANVAS http://testbed.raidho.mx/canvas2/scaling-up-people.html
 SCALING UP PROCESS CANVAS http://testbed.raidho.mx/canvas2/scaling-up-process.html
 
 
-## PROGRESS BAR HOVER EXAMPLES:
+## Progress bar examples:
 
 DESIRABILITY http://testbed.raidho.mx/canvas2/canvas-business-model.html
 
