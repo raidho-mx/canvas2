@@ -12,6 +12,9 @@
 	max-width: 90px
 	width: 100%
 
+.med-btn
+	min-width: 130px!important
+
 // SQUARE BTNS
 .purple-opacity-border-btn
 	border: 2px solid $dark-purple-opacity
@@ -48,6 +51,17 @@
 	font-weight: bold
 	min-width: 164px
 	background: $c-green
+	+p-wide-btn
+	+transition(ease 0.3s)
+	&:hover
+		+transition(ease 0.3s)
+		+filter(brightness(110%))
+
+.wide-blue-btn
+	color: $c-white
+	font-weight: bold
+	min-width: 200px
+	background: $c-cyan
 	+p-wide-btn
 	+transition(ease 0.3s)
 	&:hover
@@ -206,6 +220,16 @@
 .white-border-small-btn.active
 	+transition(0.3s ease )
 	background: $c-white
+
+.white-border-btn
+	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 1)
+	color: $c-white
+	font-weight: bold
+	+p-wide-btn
+	+transition(ease 0.3s)
+	&:hover
+		+transition(0.3s ease )
+		background: rgba(255, 255, 255, 0.3)
 
 .bg-green
 	.white-border-small-btn:hover, .white-border-small-btn.active
