@@ -2884,7 +2884,7 @@ footer, .full-menu-modal .top-content {
   float: left;
   background: #FFFFFF;
   position: relative;
-  max-width: 457px; }
+  width: 457px; }
   .add-hypothesis .bg-red {
     background: #E95454 !important; }
   .add-hypothesis .bg-green {
@@ -3408,6 +3408,21 @@ ul.color-picker-list {
   .canvas-grid-v2 .listed-hypothesis .txt:hover .edit-hypothesis {
     opacity: 1;
     visibility: visible; }
+  .canvas-grid-v2 .number {
+    cursor: default;
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    font-size: 9px;
+    text-align: center;
+    top: 4px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    height: 18px;
+    width: 18px; }
   .canvas-grid-v2 .category {
     cursor: default;
     position: relative;
@@ -3424,7 +3439,8 @@ ul.color-picker-list {
     background: #F0F0F0;
     height: 18px;
     width: 18px; }
-  .canvas-grid-v2 .category > p {
+  .canvas-grid-v2 .category > p,
+  .canvas-grid-v2 .number > p {
     position: absolute;
     left: 0;
     right: 0;
