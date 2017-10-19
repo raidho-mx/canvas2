@@ -170,6 +170,25 @@
 		padding-right: 20px
 	.txt p
 		display: inline
+	.validated
+		display: inline
+	.validated u
+		text-decoration: none
+		border-bottom: 2px solid $c-green
+	.invalidated
+		display: inline
+	.invalidated strike
+		text-decoration: none
+		position: relative
+		background-image:     -ms-linear-gradient(transparent 7px, $c-red 7px, $c-red 9px,transparent 9px)
+		background-position: center
+		background-image: -webkit-linear-gradient(transparent 7px, $c-red 7px, $c-red 9px,transparent 9px)
+		background-image:    -moz-linear-gradient(transparent 7px, $c-red 7px, $c-red 9px,transparent 9px)
+		background-image:      -o-linear-gradient(transparent 7px, $c-red 7px, $c-red 9px,transparent 9px)
+		background-image:         linear-gradient(transparent 7px, $c-red 7px, $c-red 9px,transparent 9px)
+		background-position-y: 3px
+	.normal-sans-serif
+		display: inline
 	.listed-hypothesis .txt:hover .edit-hypothesis
 		opacity: 1
 		visibility: visible
@@ -177,7 +196,7 @@
 		cursor: default
 		position: relative
 		display: inline-block
-		margin-right: 1px
+		margin-right: 2px
 		font-size: 9px
 		text-align: center
 		top: 4px

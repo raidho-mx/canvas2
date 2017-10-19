@@ -197,6 +197,10 @@ h3
 	font-family: 'Open Sans', sans-serif
 	font-weight: bold
 
+.normal-sans-serif
+	font-family: 'Open Sans', sans-serif
+	font-weight: normal
+
 .bold-serif
 	font-family: 'PT Serif', serif
 	font-weight: bold
@@ -466,11 +470,27 @@ select
 	visibility: visible
 	opacity: 1
 
+// react select input
+.Select
+	outline: none
+
+.Select-control
+	border: 3px solid #F0F0F0!important
+
 .Select--multi .Select-value
-	border: none
+	border: none!important
+	color: $c-white!important
+	border-radius: 3px!important
+	background: $c-green!important
+	margin-right: 3px
+	padding: 5px 10px
 
 .Select--multi .Select-value-icon
-	border-right: none
+	border-right: none!important
+
+.Select--multi .Select-value-icon:hover
+	color: $c-white!important
+	background: inherit!important
 
 .Select-arrow
 	border-color: $c-dark-purple transparent transparent
@@ -504,6 +524,7 @@ select
 
 .Select--multi .Select-multi-value-wrapper
 	display: inline-block
+	min-height: 43px
 
 textarea,
 select,

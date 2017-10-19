@@ -154,6 +154,10 @@ h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold; }
 
+.normal-sans-serif {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal; }
+
 .bold-serif {
   font-family: "PT Serif", serif;
   font-weight: bold; }
@@ -374,11 +378,26 @@ select {
   visibility: visible;
   opacity: 1; }
 
+.Select {
+  outline: none; }
+
+.Select-control {
+  border: 3px solid #F0F0F0 !important; }
+
 .Select--multi .Select-value {
-  border: none; }
+  border: none !important;
+  color: #FFFFFF !important;
+  border-radius: 3px !important;
+  background: #11C26F !important;
+  margin-right: 3px;
+  padding: 5px 10px; }
 
 .Select--multi .Select-value-icon {
-  border-right: none; }
+  border-right: none !important; }
+
+.Select--multi .Select-value-icon:hover {
+  color: #FFFFFF !important;
+  background: inherit !important; }
 
 .Select-arrow {
   border-color: #29244E transparent transparent;
@@ -411,7 +430,8 @@ select {
   padding-right: 5px; }
 
 .Select--multi .Select-multi-value-wrapper {
-  display: inline-block; }
+  display: inline-block;
+  min-height: 43px; }
 
 textarea,
 select,
@@ -3304,6 +3324,25 @@ ul.color-picker-list {
     padding-right: 20px; }
   .canvas-grid-v2 .txt p {
     display: inline; }
+  .canvas-grid-v2 .validated {
+    display: inline; }
+  .canvas-grid-v2 .validated u {
+    text-decoration: none;
+    border-bottom: 2px solid #11C26F; }
+  .canvas-grid-v2 .invalidated {
+    display: inline; }
+  .canvas-grid-v2 .invalidated strike {
+    text-decoration: none;
+    position: relative;
+    background-image: -ms-linear-gradient(transparent 7px, #E95454 7px, #E95454 9px, transparent 9px);
+    background-position: center;
+    background-image: -webkit-linear-gradient(transparent 7px, #E95454 7px, #E95454 9px, transparent 9px);
+    background-image: -moz-linear-gradient(transparent 7px, #E95454 7px, #E95454 9px, transparent 9px);
+    background-image: -o-linear-gradient(transparent 7px, #E95454 7px, #E95454 9px, transparent 9px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 7px, #e95454 7px, #e95454 9px, rgba(0, 0, 0, 0) 9px);
+    background-position-y: 3px; }
+  .canvas-grid-v2 .normal-sans-serif {
+    display: inline; }
   .canvas-grid-v2 .listed-hypothesis .txt:hover .edit-hypothesis {
     opacity: 1;
     visibility: visible; }
@@ -3311,7 +3350,7 @@ ul.color-picker-list {
     cursor: default;
     position: relative;
     display: inline-block;
-    margin-right: 1px;
+    margin-right: 2px;
     font-size: 9px;
     text-align: center;
     top: 4px;
