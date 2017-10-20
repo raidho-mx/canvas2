@@ -84,8 +84,23 @@
 		flex: none
 		width: 100%
 
+
 .canvas-wrap
 	height: auto
+	// Let's get this party started
+	&::-webkit-scrollbar
+		height: 5px
+		width: 5px
+	// Track
+	&::-webkit-scrollbar-track
+		background: rgba(41, 36, 78, 0.15)
+		border-radius: 5px
+	// Handle
+	&::-webkit-scrollbar-thumb
+		background: rgba(41, 36, 78, 0.4)
+		border-radius: 5px
+	&::-webkit-scrollbar-thumb:window-inactive
+		background: rgba(41, 36, 78, 0.25)
 	@media (min-width: 800px)
 		overflow-y: scroll
 		overflow-x: hidden
@@ -254,6 +269,7 @@
 		font-weight: bolder
 		z-index: 4
 		background: $c-soft-orange
+		+transition(all 0.3s ease)
 		+border-radius(30px)
 	.category-tooltip > p
 		white-space: nowrap
@@ -276,6 +292,7 @@
 		background: $c-input-gray
 		padding: 5px 14px
 		z-index: 10
+		+transition(all 0.3s ease)
 		+border-radius(30px)
 		.icon
 			cursor: pointer

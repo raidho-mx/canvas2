@@ -332,6 +332,16 @@
 		position: absolute
 		left: 7px
 		top: 9px
+	@media (max-width: $tablet_b)
+		height: 20px
+		width: 20px
+		&:before
+			content: ''
+			border-left: 5px solid transparent
+			border-right: 5px solid transparent
+			border-top: 9px solid $c-dark-purple
+			left: 5px
+			top: 7px
 
 .down-arrow-x1-btn
 	background: rgba(255, 255, 255, 0.4)
