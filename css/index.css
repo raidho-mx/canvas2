@@ -3372,7 +3372,11 @@ ul.color-picker-list {
     right: 9px;
     top: 10px;
     opacity: 0;
-    visibility: hidden; }
+    visibility: hidden;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   .canvas-grid-v2 .top {
     color: #8E8B8B;
     padding: 10px 10px 30px 10px;
