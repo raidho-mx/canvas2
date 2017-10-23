@@ -314,18 +314,30 @@ footer, .full-menu-modal .top-content
 		text-align: center
 		vertical-align: middle
 		width: 100%
+	table td img
+		position: relative
+		top: 3px
+		left: 3px
 	table td:first-child
 		text-align: left
 	table td .t-left
 		text-align: center
 	table tr.active
 		background: $c-dark-purple
-	table tr.active p, table tr.active h3, table tr.active h2
+	table tbody tr.bg-gray
+		background: $c-lighter-gray
+	table tr.active p,
+	table tr.active h3,
+	table tr.active h2
 		color: $c-white!important
 	table tr.active .untested
 		color: rgba(255,255,255,0.4)!important
-	table tr.active .invalid
-		color: $c-neon-red!important
+	table tr.active .invalid,
+	table tr .invalid,
+	table .invalid
+		color: $c-red!important
+	table tr .valid
+		color: $c-green!important
 	table tr.active .btn-cir-x1
 		background: $c-white
 		color: $c-dark-purple
@@ -344,10 +356,8 @@ footer, .full-menu-modal .top-content
 .cohort-list.project-list
 	table td
 		position: relative
-	table tr:first-child
-		display: none
-	table tr:first-child td
-		vertical-align: bottom
+	table thead tr:first-child td
+		vertical-align: top
 		padding: 0
 	.middle-line
 		border: 1px solid $dark-purple-opacity

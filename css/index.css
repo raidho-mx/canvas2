@@ -35,6 +35,9 @@
 .bg-light-blue {
   background: #6BC7FF; }
 
+.bg-light-gray {
+  background: #F8F8F8; }
+
 .bg-dark-purple {
   background-color: #29244E; }
 
@@ -61,6 +64,9 @@
 
 .c-red, .invalid {
   color: #FC035E !important; }
+
+.c-red1 {
+  color: #E95454; }
 
 .c-green, .new-element, .success {
   color: #11C26F !important; }
@@ -123,6 +129,14 @@ h3 {
 .main-content {
   min-height: 100%;
   position: relative; }
+
+.txt36 {
+  font-size: 36px;
+  line-height: 42px; }
+
+.txt24 {
+  font-size: 24px;
+  line-height: 32px; }
 
 .txt18 {
   font-size: 18px;
@@ -249,6 +263,12 @@ h3 {
 
 .border-bottom {
   border-bottom: 1px solid #F0F0F0; }
+
+.border-bottom-gray {
+  border-bottom: 2px solid #EFEFEF; }
+
+.border-top-gray {
+  border-top: 2px solid #EFEFEF; }
 
 .label-wrap.add-btn input {
   display: inline-block;
@@ -2397,18 +2417,30 @@ footer, .full-menu-modal .top-content {
   text-align: center;
   vertical-align: middle;
   width: 100%; }
+.cohort-list table td img {
+  position: relative;
+  top: 3px;
+  left: 3px; }
 .cohort-list table td:first-child {
   text-align: left; }
 .cohort-list table td .t-left {
   text-align: center; }
 .cohort-list table tr.active {
   background: #29244E; }
-.cohort-list table tr.active p, .cohort-list table tr.active h3, .cohort-list table tr.active h2 {
+.cohort-list table tbody tr.bg-gray {
+  background: #F8F8F8; }
+.cohort-list table tr.active p,
+.cohort-list table tr.active h3,
+.cohort-list table tr.active h2 {
   color: #FFFFFF !important; }
 .cohort-list table tr.active .untested {
   color: rgba(255, 255, 255, 0.4) !important; }
-.cohort-list table tr.active .invalid {
-  color: #FC035E !important; }
+.cohort-list table tr.active .invalid,
+.cohort-list table tr .invalid,
+.cohort-list table .invalid {
+  color: #E95454 !important; }
+.cohort-list table tr .valid {
+  color: #11C26F !important; }
 .cohort-list table tr.active .btn-cir-x1 {
   background: #FFFFFF;
   color: #29244E; }
@@ -2426,10 +2458,8 @@ footer, .full-menu-modal .top-content {
 
 .cohort-list.project-list table td {
   position: relative; }
-.cohort-list.project-list table tr:first-child {
-  display: none; }
-.cohort-list.project-list table tr:first-child td {
-  vertical-align: bottom;
+.cohort-list.project-list table thead tr:first-child td {
+  vertical-align: top;
   padding: 0; }
 .cohort-list.project-list .middle-line {
   border: 1px solid rgba(41, 36, 78, 0.4);
