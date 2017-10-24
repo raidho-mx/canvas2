@@ -785,6 +785,9 @@ section {
   width: 1100px;
   position: relative; }
 
+.mb0 {
+  margin-bottom: 0 !important; }
+
 .mtb50 {
   margin: 1.25em 0; }
   @media (min-width: 800px) {
@@ -798,7 +801,7 @@ section {
   margin-bottom: 1.25em; }
 
 .mb30 {
-  margin-bottom: 2em; }
+  margin-bottom: 30px; }
 
 .mb50 {
   margin-bottom: 1.25em; }
@@ -2845,6 +2848,12 @@ footer, .full-menu-modal .top-content {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
+
+.overview-bmc {
+  color: #FFFFFF;
+  background: #29244E;
+  float: left;
+  width: 100%; }
 
 .hypothesis-modal {
   position: relative;
