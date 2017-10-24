@@ -2083,13 +2083,16 @@ section {
   z-index: 1; }
 
 /* ELEMENTS */
+header.nav-is-active {
+  margin-bottom: 0; }
+
 header {
   background: #29244E;
   color: #FFFFFF;
   float: left;
   width: 100%;
-  padding: 1.25em 0;
-  margin-bottom: 2.5em; }
+  padding: 20px 0;
+  margin-bottom: 40px; }
   header .wrap {
     display: block; }
   header a {
@@ -2148,6 +2151,9 @@ header {
   header .menu-icon-btn {
     display: none;
     vertical-align: bottom; }
+  @media (min-width: 1028px) {
+    header .open-accordion {
+      left: 26px; } }
   @media (min-width: 800px) {
     header .nav-tools {
       text-align: right; }
@@ -2719,6 +2725,126 @@ footer, .full-menu-modal .top-content {
     background: rgba(41, 36, 78, 0.4); }
   .profile-details-card.bg-soft-orange .top {
     background-color: rgba(255, 181, 0, 0.8); }
+
+.nav-stage {
+  display: none;
+  background: #F8F8F8;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #EFEFEF;
+  width: 100%; }
+  .nav-stage .stage {
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 36px 10px;
+    position: relative;
+    border-left: 1px solid #EFEFEF;
+    height: 94px;
+    float: left; }
+  .nav-stage .stage:last-child {
+    border-right: 1px solid #EFEFEF; }
+  .nav-stage .number {
+    background: #4A90E2;
+    display: inline-block;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 28px;
+    width: 28px;
+    position: relative;
+    top: -3px; }
+  .nav-stage .number p {
+    top: 3px;
+    position: relative;
+    text-align: center; }
+  .nav-stage .title {
+    display: none;
+    padding: 0;
+    font-weight: bold;
+    position: relative;
+    color: #29244E;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .nav-stage .title.has-dropdown:after {
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid #29244E;
+    position: absolute;
+    right: 20px;
+    top: 7px; }
+  .nav-stage .stage.active {
+    background: #FFFFFF;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .nav-stage .stage.active .title {
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      padding-left: 18px;
+      padding-right: 30px;
+      display: inline-block; }
+    .nav-stage .stage.active .title.has-dropdown {
+      padding-right: 60px; }
+  .nav-stage .dropdown {
+    display: none;
+    bottom: 0;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    z-index: 3; }
+    .nav-stage .dropdown ul {
+      background: #F8F8F8;
+      border-right: 1px solid #EFEFEF;
+      border-left: 1px solid #EFEFEF; }
+    .nav-stage .dropdown li {
+      width: 100%;
+      display: block;
+      padding: 12px 0;
+      text-align: center;
+      color: #29244E;
+      border-bottom: 1px solid #EFEFEF; }
+    .nav-stage .dropdown li:hover, .nav-stage .dropdown li.active {
+      background: #4A90E2;
+      font-weight: bold;
+      color: #FFFFFF; }
+  .nav-stage .title.has-dropdown.active {
+    padding-right: 60px; }
+    .nav-stage .title.has-dropdown.active:after {
+      border-top: none;
+      border-bottom: 9px solid #29244E; }
+  .nav-stage .title.has-dropdown.active + .dropdown {
+    display: inline-block; }
+
+.nav-stage.active {
+  display: inline-block;
+  position: relative; }
+  .nav-stage.active:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -5px;
+    text-align: center;
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    background: #F8F8F8;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
 
 .hypothesis-modal {
   position: relative;
