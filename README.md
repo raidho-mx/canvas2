@@ -50,3 +50,13 @@ BUSINESS MODEL FIT http://testbed.raidho.mx/canvas2/bmc-business-model-fit.html
 ## Modals:
 
 MODALS http://testbed.raidho.mx/canvas2/pop-ups.html
+
+
+## Accordion:
+
+http://testbed.raidho.mx/canvas2/accordion-nav.html
+
+
+## UNGROUPED YET:
+
+LIST PROJECT VIEW http://testbed.raidho.mx/canvas2/list-project-view.html
