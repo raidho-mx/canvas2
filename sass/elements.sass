@@ -175,6 +175,28 @@ footer, .full-menu-modal .top-content
 		.pr-100
 			padding-right: 6.25em
 
+.account-breadcrumbs
+	li
+		display: inline-block
+		&:after
+			content: '>'
+			margin: 0 10px
+			display: inline-block
+	li:last-child
+		&:after
+			content: none
+	a
+		font-family: 'PT Serif', serif
+		color: $c-dark-purple
+		text-decoration: underline
+		font-size: 18px
+		line-height: 24px
+		@media (min-width: $phone_b)
+			font-size: 24px
+			line-height: 32px
+	.active
+		font-weight: bold
+		text-decoration: none
 
 // CUSTOMER DISCOVERY PAGE - INTERVIEWS
 .general-info-status
@@ -373,6 +395,18 @@ footer, .full-menu-modal .top-content
 		display: inline-block
 		padding-left: 20px
 		max-width: 80%
+	.txt.has-profile
+		position: relative
+		padding-left: 70px
+	.profile-small-thumb
+		+bg-img
+		+border-radius(50px)
+		display: inline-block
+		height: 40px
+		width: 40px
+		position: absolute
+		left: 15px
+		top: 3px
 	.btn-cir-x1
 		margin-top: 10px
 		vertical-align: top

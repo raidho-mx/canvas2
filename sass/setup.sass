@@ -14,6 +14,7 @@ $c-white: #FFFFFF
 $c-white-opacity: rgba(255, 255, 255, 0.4)
 $c-black: #000000
 $c-red: #E95454
+$c-red2: #D0021B
 $c-cyan: #009FFF
 $c-neon-red: #FC035E
 //GRAYS
@@ -111,6 +112,9 @@ $c-orange: #FF9000
 .c-red1
 	color: $c-red
 
+.c-red2
+	color: $c-red2
+
 .c-green, .new-element, .success
 	color: $c-green!important
 
@@ -173,17 +177,43 @@ h3
 	min-height: 100%
 	position: relative
 
-.txt36
-	font-size: 36px
-	line-height: 42px
-
-.txt24
+.txt48
 	font-size: 24px
 	line-height: 32px
+	@media (min-width: $tablet_b)
+		font-size: 48px
+		line-height: 58px
+	@media (min-width: $phone_b)
+		font-size: 36px
+		line-height: 42px
+
+.txt36
+	font-size: 24px
+	line-height: 32px
+	@media (min-width: $phone_b)
+		font-size: 36px
+		line-height: 46px
+
+.txt24
+	font-size: 18px
+	line-height: 24px
+	@media (min-width: $phone_b)
+		font-size: 24px
+		line-height: 32px
+
+.txt28
+	font-size: 18px
+	line-height: 24px
+	@media (min-width: $phone_b)
+		font-size: 28px
+		line-height: 36px
 
 .txt18
 	font-size: 18px
 	line-height: 24px
+
+.txt16
+	font-size: 16px
 
 .txt14
 	font-size: 14px
@@ -222,6 +252,15 @@ h3
 .bold-serif
 	font-family: 'PT Serif', serif
 	font-weight: bold
+
+.bold
+	font-weight: bold
+
+.italic
+	font-style: italic
+
+.underline
+	text-decoration: underline
 
 .yellow-highlight
 	background-color: $c-highlight-yellow
@@ -269,6 +308,24 @@ h3
 	height: 100%
 	@media (min-width: $tablet_b)
 		display: table-cell!important
+
+.is-table
+	width: 100%
+	tr
+		border-bottom: 1px solid $c-light-gray
+	td
+		padding-top: 5px
+		padding-bottom: 5px
+		display: inline-block
+		width: 100%
+	@media (min-width: $tablet_b)
+		tr
+			border-bottom: none
+		td
+			padding-top: 0
+			display: table-cell
+			width: auto
+			padding-right: 20px
 
 .align-bottom
 	position: absolute
@@ -463,6 +520,10 @@ input.serif, select.serif, textarea.serif
 	&.bg-yellow
 		color: $c-dark-purple!important
 		font-weight: bold
+
+.align-txt
+	position: relative
+	top: 7px
 
 select
 	background: url('../img/select-down.png') right no-repeat
@@ -671,6 +732,7 @@ input[type="submit"].login-btn
 		background: $c-white
 		height: 16px
 		top: 2px
+		margin: 0 5px 0 0
 		position: relative
 		padding: 0
 		width: 16px
@@ -679,8 +741,8 @@ input[type="submit"].login-btn
 	input:checked ~ span
 		opacity: 1
 		height: 8px
-		left: 4px
-		top: 7px
+		left: 4px!important
+		top: 7px!important
 		width: 8px
 	.check
 		+border-radius(11px)
@@ -693,6 +755,50 @@ input[type="submit"].login-btn
 		pointer-events: none
 		top: 4px
 		width: 8px
+
+.square-checkbox-input
+	display: inline-block
+	margin-right: 6px
+	position: relative
+	top: 0px
+	label, p
+		display: inline-block
+	input
+		cursor: pointer
+		+border-radius(0px)
+		display: inline-block
+		border: 1px solid $c-gray
+		background: $c-white
+		height: 16px
+		top: 2px
+		margin-right: 5px
+		position: relative
+		padding: 0
+		width: 16px
+	input:checked ~ span
+		opacity: 1
+		height: 8px
+		left: 4px
+		top: 7px
+		width: 8px
+	.check
+		display: block
+		height: 8px
+		left: 4px
+		opacity: 0
+		position: absolute
+		pointer-events: none
+		top: 4px
+		width: 8px
+		&:before
+			content: '✔'
+			font-size: 16px
+			color: $c-dark-purple
+			position: absolute
+			top: -9px
+			left: 0
+			right: 0
+			margin: 0 auto
 
 .bg-purple-radio-input
 	input
@@ -792,3 +898,30 @@ input[type="submit"].login-btn
 		clip-path: circle(127px, 127px, 127px)
 		width: 16em
 		height: 16em
+
+// ICONS
+.icon-circle-cross
+	position: relative
+	&:after
+		content: url('../img/icon-cross-x2.svg')
+		margin-top: 6px
+		margin-left: 10px
+		position: absolute
+	@media (max-width: $phone_b)
+		&:after
+			position: relative
+			margin-left: 0
+			top: 6px
+
+.icon-circle-check
+	position: relative
+	&:after
+		content: url('../img/icon-check-x2.svg')
+		margin-top: 6px
+		margin-left: 10px
+		position: absolute
+	@media (max-width: $phone_b)
+		&:after
+			position: relative
+			margin-left: 0
+			top: 6px

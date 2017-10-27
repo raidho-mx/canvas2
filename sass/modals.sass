@@ -211,6 +211,9 @@
 ul.color-picker-list
 	float: left
 	max-width: 10em
+	margin-top: 30px!important
+	left: 5px
+	position: relative
 	li
 		display: inline-block
 		margin: 0 13px 13px 0
@@ -386,7 +389,6 @@ ul.color-picker-list
 	display: inline-block
 	position: relative
 	width: 600px
-	min-height: 500px
 	background-color: $c-white
 	background-size: initial
 	background-repeat: no-repeat
@@ -415,17 +417,17 @@ ul.color-picker-list
 	background: $c-white
 	padding: 35px 45px
 	position: relative
-	min-height: 335px
+	float: left
 	+shadow
 	width: 590px
+	.txt
+		width: 309px
 	.input-x1
 		font-size: 14px
 		color: $c-dark-purple
 		padding: 13px 11px!important
 	h2
 		margin-bottom: 20px
-	button.green-btn
-		min-width: 200px
 
 
 // 5.- ADD NEW PROJECT
@@ -459,9 +461,10 @@ ul.color-picker-list
 // 6.- PURPLE ALERT
 .purple-alert
 	display: inline-block
+	position: relative
 	background-color: $c-dark-purple
 	color: $c-white
-	padding: 78px 45px 100px 45px
+	padding: 78px 45px
 	+shadow
 	width: 515px
 	.txt
@@ -475,3 +478,6 @@ ul.color-picker-list
 	padding: 24px
 	+shadow
 	width: 480px
+
+.wide-modal
+	width: 683px

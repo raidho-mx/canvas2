@@ -15,6 +15,10 @@
 .med-btn
 	min-width: 130px!important
 
+.wide-btn
+	max-width: 276px
+	width: 100%
+
 // SQUARE BTNS
 .purple-opacity-border-btn
 	border: 2px solid $dark-purple-opacity
@@ -73,6 +77,10 @@
 	color: $c-white
 	font-weight: bold
 	+p-wide-btn
+	+transition(ease 0.3s)
+	&:hover
+		+transition(ease 0.3s)
+		+filter(brightness(110%))
 
 .dashed-gray-btn
 	color: $c-input-gray
@@ -194,7 +202,7 @@
 	color: $c-white
 	+border-radius(30px)
 	font-weight: bold
-	padding: 0.35em 1em
+	padding: 0.35em 1.3em
 	font-size: 14px
 
 .med-rounded-btn-x2
@@ -445,6 +453,35 @@
 		content: ''
 		height: 2px
 		background: $c-light-gray
+		+transform(rotate(45deg))
+		+transform(rotate(-45deg))
+		position: relative
+		top: 14px
+		position: absolute
+		width: 18px
+		left: 6px
+
+.white-close-btn
+	height: 30px
+	cursor: pointer
+	position: absolute
+	right: 20px
+	top: 20px
+	width: 30px
+	z-index: 2
+	&:before
+		content: ''
+		height: 2px
+		background: $c-white
+		+transform(rotate(45deg))
+		top: 14px
+		position: absolute
+		width: 18px
+		left: 6px
+	&:after
+		content: ''
+		height: 2px
+		background: $c-white
 		+transform(rotate(45deg))
 		+transform(rotate(-45deg))
 		position: relative
@@ -750,3 +787,9 @@
 		top: 12px
 		position: relative
 		left: -4px
+
+
+// VARIABLES
+
+.normal-btn
+	min-width: 221px

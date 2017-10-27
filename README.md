@@ -62,3 +62,8 @@ http://testbed.raidho.mx/canvas2/accordion-nav.html
 LIST PROJECT VIEW http://testbed.raidho.mx/canvas2/list-project-view.html
 
 OVERVIEW BCM TO EXO http://testbed.raidho.mx/canvas2/bmc-exo.html
+
+
+## BILLING:
+
+JOIN GUEST http://testbed.raidho.mx/canvas2/join-guest.html

@@ -190,7 +190,7 @@
 		display: inline
 	.validated u
 		text-decoration: none
-		border-bottom: 2px solid $c-green
+		border-bottom: 2px solid $c-cornflower
 	.invalidated
 		display: inline
 	.invalidated strike
@@ -225,7 +225,8 @@
 		cursor: default
 		position: relative
 		display: inline-block
-		margin-right: 2px
+		margin-right: 0
+		margin-left: 5px
 		font-size: 9px
 		text-align: center
 		top: 4px
@@ -450,6 +451,7 @@
 	position: relative
 	max-width: 260px
 	.to-do
+		cursor: default
 		color: $c-dark-purple
 		position: relative
 		padding-left: 54px
@@ -491,11 +493,11 @@
 	@media (min-width: $tablet_b)
 		// display: none
 		// position: absolute
-		// opacity: 0
-		// right: -200px
+		opacity: 1
+		right: inherit
 		width: 19%
 		padding-left: 2%
-		// visibility: hidden
+		visibility: visible
 		// overflow: hidden
 		.top
 			margin-bottom: 0
