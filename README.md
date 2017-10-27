@@ -67,16 +67,29 @@ OVERVIEW BCM TO EXO http://testbed.raidho.mx/canvas2/bmc-exo.html
 ## BILLING:
 
 JOIN GUEST  http://testbed.raidho.mx/canvas2/join-guest.html
+
 ACCOUNT CANCELED http://testbed.raidho.mx/canvas2/account-canceled.html
+
 ACCOUNT PAYMENT REJECTED http://testbed.raidho.mx/canvas2/account-rejected.html
+
 BILLING APPROVED http://testbed.raidho.mx/canvas2/billing-approved.html
+
 BILLING GUEST FAILED http://testbed.raidho.mx/canvas2/billing-guest-failed.html
+
 BILLING GUEST http://testbed.raidho.mx/canvas2/billing-guest.html
+
 BILLING PROCESSING http://testbed.raidho.mx/canvas2/billing-processing.html
+
 BILLING TEAM PAY http://testbed.raidho.mx/canvas2/billing-team-pay.html
+
 EDIT ACCOUNT http://testbed.raidho.mx/canvas2/edit-account.html
+
 EDIDT PAYMENT ACCOUNT http://testbed.raidho.mx/canvas2/edit-payment-account.html
+
 MEMBER LIST	http://testbed.raidho.mx/canvas2/member-list-view.html
+
 PERSONAL PLAN http://testbed.raidho.mx/canvas2/personal-plan.html
+
 POP UPS ADDED FOR BILLING http://testbed.raidho.mx/canvas2/pop-ups.html
+
 PRIVACY AND POLICY	http://testbed.raidho.mx/canvas2/privacy-policy.html
