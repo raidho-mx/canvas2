@@ -913,12 +913,39 @@ input[type="submit"].login-btn
 			margin-left: 0
 			top: 6px
 
+.icon-cross-x3
+	position: relative
+	&:before
+		background-image: url('../img/icon-cross-x3.svg')
+		background-size: cover
+		background-repeat: no-repeat
+		height: 30px
+		width: 30px
+		content: ''
+		margin-top: 10px
+		margin-left: -50px
+		position: absolute
+	@media (max-width: $tablet_b)
+		&:before
+			height: 25px
+			width: 25px
+			margin-left: -40px
+	@media (max-width: $phone_b)
+		padding-left: 30px
+		&:before
+			height: 20px
+			width: 20px
+			margin-left: 10px
+			top: -2px
+			left: -9px
+
+
 .icon-circle-check
 	position: relative
 	&:after
 		content: url('../img/icon-check-x2.svg')
 		margin-top: 6px
-		margin-left: 10px
+		margin-left: 18px
 		position: absolute
 	@media (max-width: $phone_b)
 		&:after
