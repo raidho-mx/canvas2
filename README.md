@@ -84,7 +84,7 @@ BILLING TEAM PAY http://testbed.raidho.mx/canvas2/billing-team-pay.html
 
 EDIT ACCOUNT http://testbed.raidho.mx/canvas2/edit-account.html
 
-EDIDT PAYMENT ACCOUNT http://testbed.raidho.mx/canvas2/edit-payment-account.html
+EDIT PAYMENT ACCOUNT http://testbed.raidho.mx/canvas2/edit-payment-account.html
 
 MEMBER LIST	http://testbed.raidho.mx/canvas2/member-list-view.html
 
