@@ -95,3 +95,5 @@ TEAM PLAN http://testbed.raidho.mx/canvas2/team-plan.html
 POP UPS ADDED FOR BILLING http://testbed.raidho.mx/canvas2/pop-ups.html
 
 PRIVACY AND POLICY	http://testbed.raidho.mx/canvas2/privacy-policy.html
+
+TERMS AND CONDITIONS http://testbed.raidho.mx/canvas2/terms-conditions.html
