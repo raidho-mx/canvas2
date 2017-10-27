@@ -72,6 +72,8 @@ ACCOUNT CANCELED http://testbed.raidho.mx/canvas2/account-canceled.html
 
 ACCOUNT PAYMENT REJECTED http://testbed.raidho.mx/canvas2/account-rejected.html
 
+UNABLE PROCESS PAYMENT http://testbed.raidho.mx/canvas2/unable-process-payment.html
+
 BILLING APPROVED http://testbed.raidho.mx/canvas2/billing-approved.html
 
 BILLING GUEST FAILED http://testbed.raidho.mx/canvas2/billing-guest-failed.html
