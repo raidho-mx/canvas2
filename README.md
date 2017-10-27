@@ -90,6 +90,8 @@ MEMBER LIST	http://testbed.raidho.mx/canvas2/member-list-view.html
 
 PERSONAL PLAN http://testbed.raidho.mx/canvas2/personal-plan.html
 
+TEAM PLAN http://testbed.raidho.mx/canvas2/team-plan.html
+
 POP UPS ADDED FOR BILLING http://testbed.raidho.mx/canvas2/pop-ups.html
 
 PRIVACY AND POLICY	http://testbed.raidho.mx/canvas2/privacy-policy.html
