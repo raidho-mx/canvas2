@@ -136,14 +136,14 @@ h3 {
 .txt48 {
   font-size: 24px;
   line-height: 32px; }
-  @media (min-width: 800px) {
-    .txt48 {
-      font-size: 48px;
-      line-height: 58px; } }
   @media (min-width: 600px) {
     .txt48 {
       font-size: 36px;
       line-height: 42px; } }
+  @media (min-width: 800px) {
+    .txt48 {
+      font-size: 48px;
+      line-height: 58px; } }
 
 .txt36 {
   font-size: 24px;
@@ -1115,6 +1115,15 @@ section {
     .three-col {
       width: 66%; } }
 
+.three-col-one-col {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 100%; }
+  @media (min-width: 1028px) {
+    .three-col-one-col {
+      width: 66%; } }
+
 .two-col {
   float: left;
   position: relative;
@@ -1192,6 +1201,20 @@ section {
 
 .right-gutter {
   padding-right: 1.25em; }
+
+@media (max-width: 800px) {
+  .r-columns {
+    padding-bottom: 1.25em; } }
+@media (min-width: 800px) {
+  .r-columns {
+    padding-right: 0.625em; } }
+
+@media (max-width: 800px) {
+  .l-columns {
+    padding-bottom: 1.25em; } }
+@media (min-width: 800px) {
+  .l-columns {
+    padding-left: 0.625em; } }
 
 @media (max-width: 800px) {
   .columns {

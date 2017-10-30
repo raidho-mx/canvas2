@@ -183,6 +183,7 @@ section
 	@media (min-width: $tablet_b)
 		width: 20%
 
+// 2/3
 .three-col
 	display: inline-block
 	position: relative
@@ -190,6 +191,16 @@ section
 	width: 100%
 	@media (min-width: $tablet_b)
 		width: 66%
+
+// 2/3 to 1
+.three-col-one-col
+	display: inline-block
+	position: relative
+	vertical-align: top
+	width: 100%
+	@media (min-width: $random)
+		width: 66%
+
 
 // 1/2
 .two-col
@@ -271,11 +282,24 @@ section
 .right-gutter
 	padding-right: 1.25em
 
+.r-columns
+	@media (max-width: $tablet_b)
+		padding-bottom: 1.25em
+	@media (min-width: $tablet_b)
+		padding-right: 0.625em
+
+.l-columns
+	@media (max-width: $tablet_b)
+		padding-bottom: 1.25em
+	@media (min-width: $tablet_b)
+		padding-left: 0.625em
+
 .columns
 	@media (max-width: $tablet_b)
 		padding-bottom: 1.25em
 	@media (min-width: $tablet_b)
 		padding-right: 1.25em
+
 
 .column-p70
 	@media (max-width: $tablet_b)

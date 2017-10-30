@@ -59,7 +59,7 @@ http://testbed.raidho.mx/canvas2/accordion-nav.html
 
 ## UNGROUPED YET:
 
-LIST PROJECT VIEW http://testbed.raidho.mx/canvas2/list-project-view.html
+PROJECT LIST VIEW http://testbed.raidho.mx/canvas2/list-project-view.html
 
 OVERVIEW BCM TO EXO http://testbed.raidho.mx/canvas2/bmc-exo.html
 
@@ -68,34 +68,40 @@ OVERVIEW BCM TO EXO http://testbed.raidho.mx/canvas2/bmc-exo.html
 
 JOIN GUEST  http://testbed.raidho.mx/canvas2/join-guest.html
 
-ACCOUNT CANCELED http://testbed.raidho.mx/canvas2/account-canceled.html
+BILLING GUEST http://testbed.raidho.mx/canvas2/billing-guest.html
 
-ACCOUNT PAYMENT REJECTED http://testbed.raidho.mx/canvas2/account-rejected.html
-
-UNABLE PROCESS PAYMENT http://testbed.raidho.mx/canvas2/unable-process-payment.html
-
-BILLING APPROVED http://testbed.raidho.mx/canvas2/billing-approved.html
+BILLING GUEST NEW USER http://testbed.raidho.mx/canvas2/billing-guest.html
 
 BILLING GUEST FAILED http://testbed.raidho.mx/canvas2/billing-guest-failed.html
 
-BILLING GUEST http://testbed.raidho.mx/canvas2/billing-guest.html
+BILLING TEAM PAY http://testbed.raidho.mx/canvas2/billing-team-pay.html
 
 BILLING PROCESSING http://testbed.raidho.mx/canvas2/billing-processing.html
 
-BILLING TEAM PAY http://testbed.raidho.mx/canvas2/billing-team-pay.html
+BILLING APPROVED http://testbed.raidho.mx/canvas2/billing-approved.html
 
-EDIT ACCOUNT http://testbed.raidho.mx/canvas2/edit-account.html
+### INSIDE THE ACCOUNT
 
-EDIT PAYMENT ACCOUNT http://testbed.raidho.mx/canvas2/edit-payment-account.html
-
-MEMBER LIST	http://testbed.raidho.mx/canvas2/member-list-view.html
+PROJECT LIST VIEW http://testbed.raidho.mx/canvas2/list-project-view.html
 
 PERSONAL PLAN http://testbed.raidho.mx/canvas2/personal-plan.html
 
 TEAM PLAN http://testbed.raidho.mx/canvas2/team-plan.html
 
-POP UPS ADDED FOR BILLING http://testbed.raidho.mx/canvas2/pop-ups.html
+EDIT ACCOUNT http://testbed.raidho.mx/canvas2/edit-account.html
+
+EDIT PAYMENT ACCOUNT http://testbed.raidho.mx/canvas2/edit-payment-account.html
+
+ACCOUNT CANCELED http://testbed.raidho.mx/canvas2/account-canceled.html
+
+MEMBER LIST	http://testbed.raidho.mx/canvas2/member-list-view.html
+
+ACCOUNT PAYMENT REJECTED http://testbed.raidho.mx/canvas2/account-rejected.html
 
 PRIVACY AND POLICY	http://testbed.raidho.mx/canvas2/privacy-policy.html
 
 TERMS AND CONDITIONS http://testbed.raidho.mx/canvas2/terms-conditions.html
+
+UNABLE PROCESS PAYMENT http://testbed.raidho.mx/canvas2/unable-process-payment.html
+
+POP UPS ADDED FOR BILLING http://testbed.raidho.mx/canvas2/pop-ups.html
