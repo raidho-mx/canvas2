@@ -80,7 +80,8 @@ BILLING PROCESSING http://testbed.raidho.mx/canvas2/billing-processing.html
 
 BILLING APPROVED http://testbed.raidho.mx/canvas2/billing-approved.html
 
-### INSIDE THE ACCOUNT
+
+## ACCOUNT
 
 PROJECT LIST VIEW http://testbed.raidho.mx/canvas2/list-project-view.html
 
