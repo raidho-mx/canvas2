@@ -66,6 +66,14 @@ OVERVIEW BCM TO EXO http://testbed.raidho.mx/canvas2/bmc-exo.html
 
 ## BILLING:
 
+CHOOSE A PLAN	http://testbed.raidho.mx/canvas2/account-plan.html
+
+PLAN PERSONAL & TEAM	http://testbed.raidho.mx/canvas2/account-plan-personal.html
+
+PLAN REQUEST ENTERPRISE	http://testbed.raidho.mx/canvas2/account-request-enterprise.html
+
+PLAN CONFIRMATION MESSAGE	http://testbed.raidho.mx/canvas2/account-confirmation-request.html
+
 JOIN GUEST  http://testbed.raidho.mx/canvas2/join-guest.html
 
 BILLING GUEST http://testbed.raidho.mx/canvas2/billing-guest.html
