@@ -8,6 +8,9 @@
 .c-dark-gray {
   color: #4A4A4A; }
 
+.bg-white {
+  background-color: #FFFFFF; }
+
 .bg-red {
   background: #E95454; }
 
@@ -85,6 +88,9 @@
 
 .c-light-purple {
   color: #E8E5FF; }
+
+.c-lighter-purple {
+  color: #585379; }
 
 .c-cornflower {
   color: #4A90E2; }
@@ -301,6 +307,9 @@ h3 {
 .c-center {
   margin: 0 auto; }
 
+.t-center {
+  text-align: center; }
+
 .t-left {
   text-align: left; }
 
@@ -330,6 +339,9 @@ h3 {
 
 .border-top-gray {
   border-top: 2px solid #EFEFEF; }
+
+.small-input {
+  width: 70px; }
 
 .label-wrap.add-btn input {
   display: inline-block;
@@ -1003,6 +1015,9 @@ section {
 
 .m-right {
   margin-right: 1em; }
+
+.pb20 {
+  padding-bottom: 20px; }
 
 .p24 {
   padding: 1.5em; }
@@ -3178,6 +3193,26 @@ footer, .full-menu-modal .top-content {
   background: #29244E;
   float: left;
   width: 100%; }
+
+.white-box {
+  overflow: hidden;
+  float: inherit;
+  min-height: 490px;
+  max-width: 350px; }
+
+.tabs-menu li {
+  float: left;
+  margin-right: 20px; }
+.tabs-menu li.current a {
+  color: #FFFFFF; }
+.tabs-menu a {
+  color: #585379; }
+
+.tab-content {
+  display: none; }
+
+#tab-1 {
+  display: block; }
 
 .hypothesis-modal {
   position: relative;
