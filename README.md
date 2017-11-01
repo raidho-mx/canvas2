@@ -114,3 +114,8 @@ TERMS AND CONDITIONS http://testbed.raidho.mx/canvas2/terms-conditions.html
 UNABLE PROCESS PAYMENT http://testbed.raidho.mx/canvas2/unable-process-payment.html
 
 POP UPS ADDED FOR BILLING http://testbed.raidho.mx/canvas2/pop-ups.html
+
+
+## CANVAS QUESTIONARY
+
+http://testbed.raidho.mx/canvas2/questionary.html
