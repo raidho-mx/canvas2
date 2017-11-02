@@ -61,6 +61,36 @@
 		+transition(ease 0.3s)
 		+filter(brightness(110%))
 
+.green-btn-dashed
+	color: $c-white
+	min-width: 164px
+	padding: 7px
+	font-weight: bold
+	background: $c-green
+	+transition(ease 0.3s)
+	&:hover
+		+transition(ease 0.3s)
+		+filter(brightness(110%))
+	.border-dashed
+		+border-radius(3px)
+		padding: 20px 25px
+		border: 3px dashed $c-white
+		height: 100%
+		width: 100%
+	p
+		position: relative
+		padding-left: 30px
+	p:before
+		background-image: url('../img/icon-add-green-cir.svg')
+		background-size: cover
+		background-repeat: no-repeat
+		height: 28px
+		width: 28px
+		content: ""
+		margin-top: -3px
+		margin-left: -39px
+		position: absolute
+
 .wide-blue-btn
 	color: $c-white
 	font-weight: bold
@@ -793,3 +823,8 @@
 
 .normal-btn
 	min-width: 221px
+
+.icon-btn img
+	position: relative
+	top: 5px
+	display: inline-block

@@ -604,8 +604,7 @@ footer, .full-menu-modal .top-content
 	display: inline-block
 	width: 287px
 	.top
-		padding: 15px 20px
-		min-height: 90px
+		padding: 9px 20px
 		width: 100%
 	.bottom
 		display: inline-block
@@ -636,6 +635,19 @@ footer, .full-menu-modal .top-content
 		background: $dark-purple-opacity
 	.top
 		background-color: rgba(255, 181, 0, 0.8)
+
+.profile-details-card.small-card
+	max-width: 257px
+	width: 100%
+	.txt
+		width: auto
+	.txt.has-profile
+		position: relative
+		padding-left: 55px
+		.profile-btn
+			position: absolute
+			left: 5px
+			top: 3px
 
 // ACCORDION NAVIGATION
 .nav-stage
@@ -772,3 +784,35 @@ footer, .full-menu-modal .top-content
 
 #tab-1
 	display: block
+
+
+// CIRCLE GRAPHIC
+.market-size-graphic
+	position: relative
+	padding-bottom: 80%
+	width: 80%
+	+transform(rotate(40deg))
+	.one
+		padding-bottom: 100%
+		width: 100%
+		bottom: 0
+		background: $c-lightest-orange
+		+horizontal-center
+		+border-radius(100%)
+	.two
+		padding-bottom: 70%
+		width: 70%
+		bottom: 0
+		background: $c-medium-orange
+		+horizontal-center
+		+border-radius(100%)
+	.three
+		padding-bottom: 50%
+		width: 50%
+		bottom: 0
+		background: $c-soft-orange
+		+horizontal-center
+		+border-radius(100%)
+	@media (min-width: $tablet_b)
+		padding-bottom: 90%
+		width: 90%

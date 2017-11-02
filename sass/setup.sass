@@ -43,6 +43,8 @@ $c-green: #11C26F
 $c-yellow: #FFEF00
 $c-highlight-yellow: #FEFF7C
 // ORANGES
+$c-lightest-orange: #FFDD8B
+$c-medium-orange: #FFCA4B
 $c-soft-orange: #FFB500
 $c-orange: #FF9000
 
@@ -124,6 +126,12 @@ $c-orange: #FF9000
 
 .c-soft-orange
 	color: $c-soft-orange
+
+.c-lightest-orange
+	color: $c-lightest-orange
+
+.c-medium-orange
+	color: $c-medium-orange
 
 .c-dark-purple
 	color: $c-dark-purple
@@ -334,10 +342,18 @@ h3
 			width: auto
 			padding-right: 20px
 
+.position-relative
+	position: relative
+
 .align-bottom
 	position: absolute
 	bottom: 0
 	left: 0
+
+.align-bottom-right
+	position: absolute
+	bottom: 10px
+	right: 10px
 
 .align-top
 	vertical-align: top!important
@@ -769,7 +785,8 @@ input[type="submit"].login-btn
 		top: 4px
 		width: 8px
 
-.blue-check-input.is-aligned
+.blue-check-input.is-aligned,
+.square-checkbox-input.is-aligned
 	.left-align
 		position: absolute
 		top: 0

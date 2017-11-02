@@ -119,3 +119,19 @@ POP UPS ADDED FOR BILLING http://testbed.raidho.mx/canvas2/pop-ups.html
 ## CANVAS QUESTIONARY
 
 http://testbed.raidho.mx/canvas2/questionary.html
+
+
+## PROJECT PROFILE
+
+http://testbed.raidho.mx/canvas2/project-profile-edit.html
+
+http://testbed.raidho.mx/canvas2/project-profile-full.html
+
+http://testbed.raidho.mx/canvas2/project-profile.html
+
+
+## TRL
+
+http://testbed.raidho.mx/canvas2/trl1.html
+
+http://testbed.raidho.mx/canvas2/trl2.html
