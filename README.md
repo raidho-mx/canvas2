@@ -135,3 +135,11 @@ http://testbed.raidho.mx/canvas2/project-profile.html
 http://testbed.raidho.mx/canvas2/trl1.html
 
 http://testbed.raidho.mx/canvas2/trl2.html
+
+http://testbed.raidho.mx/canvas2/trl3.html
+
+http://testbed.raidho.mx/canvas2/trl4.html
+
+http://testbed.raidho.mx/canvas2/trl5.html
+
+http://testbed.raidho.mx/canvas2/trl6.html
