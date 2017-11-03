@@ -143,3 +143,8 @@ http://testbed.raidho.mx/canvas2/trl4.html
 http://testbed.raidho.mx/canvas2/trl5.html
 
 http://testbed.raidho.mx/canvas2/trl6.html
+
+
+## SCALING UP OVERVIEW
+
+http://testbed.raidho.mx/canvas2/scaling-up-overview.html

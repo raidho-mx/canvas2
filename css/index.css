@@ -47,6 +47,9 @@
 .bg-dark-purple-opacity8 {
   background-color: rgba(41, 36, 78, 0.8); }
 
+.bg-grayx1 {
+  background-color: #FBFBFB; }
+
 .bg-cyan {
   background-color: #009FFF; }
 
@@ -1094,6 +1097,12 @@ section {
 .ptb {
   padding: 16px 0; }
 
+.p70 {
+  padding: 30px; }
+  @media (min-width: 800px) {
+    .p70 {
+      padding: 90px 70px; } }
+
 .ptb40 {
   padding: 40px 0; }
 
@@ -1293,6 +1302,12 @@ section {
 @media (min-width: 800px) {
   .column-p70 {
     padding-right: 4.375em; } }
+
+.height90 {
+  height: auto; }
+  @media (min-width: 800px) {
+    .height90 {
+      height: 90vh; } }
 
 .mobile {
   display: inline-block; }

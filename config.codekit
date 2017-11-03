@@ -813,6 +813,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/scaling-up-overview.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scaling-up-overview.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/scaling-up-people.html": {
 		"fileType": 8192,
 		"ignore": 0,
