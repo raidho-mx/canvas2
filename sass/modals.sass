@@ -395,6 +395,24 @@ ul.color-picker-list
 	background-position: top left
 	color: $c-dark-purple
 	+shadow
+	.max-height
+		max-height: 200px
+		overflow-y: scroll
+		overflow-x: hidden
+		// Let's get this party started
+		&::-webkit-scrollbar
+			height: 5px
+			width: 5px
+		// Track
+		&::-webkit-scrollbar-track
+			background: rgba(41, 36, 78, 0.15)
+			border-radius: 5px
+		// Handle
+		&::-webkit-scrollbar-thumb
+			background: rgba(41, 36, 78, 0.4)
+			border-radius: 5px
+		&::-webkit-scrollbar-thumb:window-inactive
+			background: rgba(41, 36, 78, 0.25)
 	.scroll-content
 		height: 130px
 	.tagsinput
@@ -464,6 +482,18 @@ ul.color-picker-list
 	position: relative
 	background-color: $c-dark-purple
 	color: $c-white
+	padding: 78px 45px
+	+shadow
+	width: 515px
+	.txt
+		width: 278px
+
+// 6.- WHITE ALERT
+.white-alert
+	display: inline-block
+	position: relative
+	background-color: $c-white
+	color: $c-dark-purple
 	padding: 78px 45px
 	+shadow
 	width: 515px
