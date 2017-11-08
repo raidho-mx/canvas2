@@ -10,30 +10,67 @@
 	background: $c-white
 	padding: 3px
 	+shadow
+	.table-cell
+		display: table-cell !important
+	.gray-close-btn
+		right: 6px
+		top: 6px
 	> div.half-col
 		+table-cell
 		float: initial
 	.input-text
-		height: 160px
+		height: 140px
 		font-family: 'PT Serif', serif
 		color: $c-dark-purple
 		+placeholder-color($dark-purple-opacity)
 	.hypothesis-quiz-wrap
 		height: 270px
 		overflow: hidden
-	.hypothesis-wrap.mCS_no_scrollbar
-		width: 370px
 	.hypothesis-wrap
 		height: 340px
 		overflow: hidden
+	.hypothesis-wrap.purple-scroll
+		overflow-y: scroll
+		overflow-x: hidden
+		padding-right: 10px
+	.question
+		cursor: default
+	.question.disabled
+		pointer-events: none
+		opacity: 0.4
+	.edit-answers
+		opacity: 0
+		visibility: hidden
+		position: absolute
+		top: 3px
+		right: -4px
+		+transition(ease 0.3s)
+		button
+			color: $c-white
+			display: block
+			width: 35px
+			margin-bottom: 5px
+		button:last-child
+			margin-bottom: 0
+	.edit-answers.active
+		opacity: 1
+		visibility: visible
+		+transition(ease 0.3s)
+	.question:hover .edit-answers
+		opacity: 1
+		visibility: visible
+		+transition(ease 0.3s)
 	ul.specs-tabs
 		height: 42px
 		li
-			display: inline-block
+			float: left
 			padding-right: 0.5em
 		li:last-child
 			padding-right: 0
+		li button.white-border-small-btn
+			font-size: 11px
 
+			
 .hypothesis-specs
 	width: 100%
 	height: 390px
@@ -47,9 +84,15 @@
 	.specs-wrap
 		max-width: 640px
 
-@media (max-width: $tablet_b)
-	.hypothesis-specs.scroll-content
-		overflow-y: scroll
+.hypothesis-specs.white-scroll,
+.hypothesis-specs.purple-scroll
+	height: 390px
+	overflow-y: scroll
+	overflow-x: hidden
+
+
+// VALUE MAP MODAL
+
 
 // HYPOTHESIS COMMMENT
 .hypothesis-comment
@@ -461,7 +504,7 @@ ul.color-picker-list
 	.input-x1, .tagsinput
 		font-size: 14px
 		color: $c-dark-purple
-		padding: 13px 11px!important
+		padding: 8px 11px!important
 	.tagsinput
 		padding-bottom: 0!important
 	.tagsinput > div

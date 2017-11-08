@@ -12,9 +12,11 @@ $phone_b: 600px
 // COLORS
 $c-white: #FFFFFF
 $c-white-opacity: rgba(255, 255, 255, 0.4)
+$c-white-opacity-1: rgba(255, 255, 255, 0.15)
 $c-black: #000000
 $c-red: #E95454
 $c-red2: #D0021B
+$c-red3: #E85454
 $c-cyan: #009FFF
 $c-neon-red: #FC035E
 //GRAYS
@@ -61,6 +63,12 @@ $c-orange: #FF9000
 
 .bg-red
 	background: $c-red
+
+.bg-soft-red
+	background: $c-red3
+
+.bg-soft-red-opacity8
+	background-color: rgba(233, 84, 84, 0.8)
 
 .bg-light-red
 	background: $c-neon-red
@@ -122,10 +130,10 @@ $c-orange: #FF9000
 .c-red1
 	color: $c-red
 
-.c-red2
+.c-red2, .not-valid
 	color: $c-red2
 
-.c-green, .new-element, .success
+.c-green, .new-element, .success, .tested
 	color: $c-green!important
 
 .c-soft-orange
@@ -308,8 +316,14 @@ h3
 	opacity: 0.9
 	width: 100%
 
+.strikethrough
+	text-decoration: line-through
+
 .inline
 	display: inline-block
+
+.block
+	display: block
 
 .f-left
 	float: left
@@ -359,6 +373,11 @@ h3
 	bottom: 10px
 	right: 10px
 
+.align-top-right
+	position: absolute
+	top: 10px
+	right: 10px
+
 .align-top
 	vertical-align: top!important
 
@@ -400,6 +419,12 @@ h3
 
 .border-top-gray
 	border-top: 2px solid $c-light-gray
+
+.border-top-opacity-white
+	border-bottom: 2px solid $c-white-opacity-1
+
+.border-bottom-opacity-white
+	border-bottom: 2px solid $c-white-opacity-1
 
 =bg-img
 	background-repeat: no-repeat

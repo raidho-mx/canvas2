@@ -822,3 +822,74 @@ footer, .full-menu-modal .top-content
 	@media (min-width: $tablet_b)
 		padding-bottom: 90%
 		width: 90%
+
+
+// WHITE OPACITY SCROLL
+.white-scroll
+	&::-webkit-scrollbar
+		height: 5px
+		width: 5px
+	// Track
+	&::-webkit-scrollbar-track
+		background: rgba(255, 255, 255, 0.15)
+		border-radius: 5px
+	// Handle
+	&::-webkit-scrollbar-thumb
+		background: rgba(255, 255, 255, 0.4)
+		border-radius: 5px
+	&::-webkit-scrollbar-thumb:window-inactive
+		background: rgba(255, 255, 255, 0.25)
+	@media (min-width: 800px)
+		overflow-y: scroll
+		overflow-x: hidden
+
+// PURPLE SCROLL
+.purple-scroll
+	overflow-y: scroll
+	overflow-x: hidden
+	// Let's get this party started
+	&::-webkit-scrollbar
+		height: 5px
+		width: 5px
+	// Track
+	&::-webkit-scrollbar-track
+		background: rgba(41, 36, 78, 0.15)
+		border-radius: 5px
+	// Handle
+	&::-webkit-scrollbar-thumb
+		background: rgba(41, 36, 78, 0.4)
+		border-radius: 5px
+	&::-webkit-scrollbar-thumb:window-inactive
+		background: rgba(41, 36, 78, 0.25)
+
+
+.has-dropdown-menu
+	position: relative
+	float: left
+	+border-radius(15px)
+	color: $c-white
+	padding: 20px
+	width: 198px
+	a
+		color: $c-white
+	a:hover
+		text-decoration: underline
+	.contain
+		height: 270px
+	.list li
+		display: block
+		font-size: 12px
+		margin-bottom: 5px
+	&:after
+		content: " "
+		top: -8px
+		position: absolute
+		left: 0
+		margin: 0 auto
+		right: 0
+		width: 0
+		height: 0
+		border-left: 4px solid transparent
+		border-right: 4px solid transparent
+		border-bottom: 8px solid #29244E
+		z-index: 1

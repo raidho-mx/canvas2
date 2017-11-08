@@ -61,6 +61,17 @@
 		+transition(ease 0.3s)
 		+filter(brightness(110%))
 
+.purple-btn
+	color: $c-white
+	font-weight: bold
+	min-width: 164px
+	background: $c-dark-purple
+	+p-wide-btn
+	+transition(ease 0.3s)
+	&:hover
+		+transition(ease 0.3s)
+		+filter(brightness(110%))
+
 .green-btn-dashed
 	color: $c-white
 	min-width: 164px
@@ -91,6 +102,60 @@
 		margin-left: -39px
 		position: absolute
 
+.white-btn-dashed
+	color: $c-white
+	min-width: 164px
+	padding: 7px
+	font-weight: bold
+	+border-radius(3px)
+	padding: 20px 25px
+	border: 3px dashed $c-white-opacity
+	height: 100%
+	width: 100%
+	p
+		font-size: 12px
+		position: relative
+		padding-left: 30px
+	p:before
+		background-image: url('../img/icon-add-green-cir.svg')
+		background-size: cover
+		background-repeat: no-repeat
+		height: 28px
+		width: 28px
+		content: ""
+		margin-top: -6px
+		margin-left: -39px
+		position: absolute
+
+.white-btn-dashed-x2
+	color: $c-white
+	padding: 7px
+	font-weight: bold
+	+border-radius(12px)
+	padding: 11px 25px
+	border: 3px dashed $c-white-opacity
+	height: 100%
+	width: 100%
+	+transition(ease 0.3s)
+	p
+		font-size: 12px
+		font-weight: bold
+		position: relative
+		padding-left: 20px
+	p:before
+		background-image: url('../img/icon-add-green-cir.svg')
+		background-size: cover
+		background-repeat: no-repeat
+		height: 26px
+		width: 26px
+		content: ""
+		margin-top: -5px
+		margin-left: -38px
+		position: absolute
+	&:hover
+		+transition(ease 0.3s)
+		background: rgba(255,255,255,0.2)
+
 .wide-blue-btn
 	color: $c-white
 	font-weight: bold
@@ -118,7 +183,7 @@
 	border: 3px dashed $c-input-gray
 	font-weight: bold
 	width: 100%
-	+p-btn
+	padding: 20px 24px
 	padding-bottom: 1.3em
 
 .c-cyan.dashed-gray-btn
@@ -167,6 +232,24 @@
 .remove-gray-btn.active
 	+transition(all ease 0.3s)
 	border: 3px solid $c-dark-purple
+
+.remove-red-btn
+	position: relative
+	text-align: left
+	color: $c-input-gray
+	+border-radius(5px)
+	border: 3px solid $c-input-gray
+	+transition(all ease 0.3s)
+	+p-btn
+	padding-right: 1.5em
+	width: 100%
+	&:hover
+		+transition(all ease 0.3s)
+		border: 3px solid #CF6666
+
+.remove-red-btn.active
+	+transition(all ease 0.3s)
+	border: 3px solid #CF6666
 
 
 // ROUNDED CORNERS BTNS
@@ -247,12 +330,13 @@
 	border: 2px solid $c-white
 	font-weight: bold
 	font-size: 0.75em
-	padding: 0.27em 0.7em
+	padding: 4px 7px
+	+transition(0.2s ease )
 	+border-radius(35px)
 	img
 		max-height: 17px
 	&:hover
-		+transition(0.3s ease )
+		+transition(0.2s ease )
 		background: $c-white
 
 .yellow-border-small-btn
@@ -288,6 +372,11 @@
 		color: $c-soft-orange
 		&.chat-btn:before
 			background-image: url('../img/icon-chat-yellow.svg')
+.bg-soft-red
+	.white-border-small-btn:hover, .white-border-small-btn.active
+		color: $c-dark-purple
+		&.chat-btn:before
+			background-image: url('../img/icon-chat-dark-purple.svg')
 
 .bg-dark-purple
 	.white-border-small-btn:hover, .white-border-small-btn.active
@@ -650,6 +739,30 @@
 	font-weight: bold
 	color: $c-white
 	+transition(ease 0.3s)
+
+
+.blue-add-cir-btn
+	display: inline-block
+	position: relative
+	&:after
+		content: "+"
+		+border-radius(30px)
+		font-size: 24px
+		font-weight: bold
+		color: $c-white
+		height: 30px
+		width: 30px
+		background-color: $c-cyan
+		position: absolute
+		+transition(ease 0.3s)
+		left: -43px
+		right: 0
+		top: -4px
+		line-height: 29px
+	p
+		display: inline-block
+
+
 
 .bg-gray-add-btn
 	+border-radius(30px)
