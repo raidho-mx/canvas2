@@ -22,7 +22,6 @@ header
 		vertical-align: top
 		// margin-top: 1.25em
 	.breadcrumbs
-		// padding: 1em 0
 		display: inline-block
 		width: 80%
 	.breadcrumbs li
@@ -44,12 +43,12 @@ header
 	.nav-tools img
 		vertical-align: middle
 	.nav-tools li
-		// padding: 1.25em 0
 		margin-right: inherit
 		vertical-align: middle
 		display: inline-block
 	.nav-tools li:last-child
 		width: 100%
+		margin-left: 1em
 	.profile-btn
 		font-weight: bold
 		color: $c-white
@@ -106,8 +105,17 @@ header
 
 header.mentor-header
 	margin-bottom: 3.125em
+	padding: 0
+	.breadcrumbs
+		padding: 1em 0
+	.nav-tools li
+		padding: 1.25em 0
+		padding-left: 20px
+		height: 66px
+	.nav-tools li:last-child
+		padding-left: 20px
 	.profile-btn
-		padding-right: 80px
+		padding-right: 20px
 		width: auto
 	.profile-btn .txt
 		padding-right: 1em
@@ -117,6 +125,7 @@ header.mentor-header
 	.profile-btn .txt .name
 		+line-clamp-x1
 	.profile-btn .bg-img
+		float: inherit
 		position: relative
 		top: -10px
 	@media (min-width: $tablet_b)
