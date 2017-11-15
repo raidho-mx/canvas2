@@ -2806,6 +2806,7 @@ header.mentor-header {
     overflow: hidden; }
   header.mentor-header .profile-btn .bg-img {
     float: inherit;
+    right: 0;
     position: relative;
     top: -10px; }
   @media (min-width: 800px) {
