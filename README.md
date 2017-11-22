@@ -105,6 +105,8 @@ ACCOUNT CANCELED http://testbed.raidho.mx/canvas2/account-canceled.html
 
 MEMBER LIST	http://testbed.raidho.mx/canvas2/member-list-view.html
 
+MEMBER LIST EDITABLE  http://testbed.raidho.mx/canvas2/list-chose-member.html
+
 ACCOUNT PAYMENT REJECTED http://testbed.raidho.mx/canvas2/account-rejected.html
 
 PRIVACY AND POLICY	http://testbed.raidho.mx/canvas2/privacy-policy.html
@@ -114,6 +116,8 @@ TERMS AND CONDITIONS http://testbed.raidho.mx/canvas2/terms-conditions.html
 UNABLE PROCESS PAYMENT http://testbed.raidho.mx/canvas2/unable-process-payment.html
 
 POP UPS ADDED FOR BILLING http://testbed.raidho.mx/canvas2/pop-ups.html
+
+ACCOUNT SUMMARY  http://testbed.raidho.mx/canvas2/account-summary.html
 
 
 ## CANVAS QUESTIONARY
