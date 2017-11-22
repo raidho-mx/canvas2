@@ -868,6 +868,49 @@ input[type="submit"].login-btn
 			right: 0
 			margin: 0 auto
 
+.green-check-input
+	display: inline-block
+	margin-right: 6px
+	position: relative
+	top: 0px
+	label, p
+		display: inline-block
+	input
+		cursor: pointer
+		+border-radius(0px)
+		display: inline-block
+		border: 3px solid #E3E3E3
+		+border-radius(3px)
+		background: $c-white
+		height: 28px
+		top: 2px
+		margin-right: 5px
+		position: relative
+		padding: 0
+		width: 28px
+	input:checked ~ span
+		opacity: 1
+		height: 8px
+		left: 4px
+		top: 7px
+		width: 8px
+	.check
+		display: block
+		height: 8px
+		left: 4px
+		opacity: 0
+		position: absolute
+		pointer-events: none
+		top: 4px
+		width: 8px
+		&:before
+			content: url('../img/icon-green-check.svg')
+			position: absolute
+			top: -6px
+			left: 0
+			right: 0
+			margin: 0 auto
+
 .bg-purple-radio-input
 	input
 		background: $c-light-purple
