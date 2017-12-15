@@ -949,3 +949,35 @@
 	position: relative
 	top: 5px
 	display: inline-block
+
+.kbase-tooltip
+	top: 30px
+	position: relative
+
+.kbase-tooltip .tooltip
+	opacity: 0
+	visibility: hidden
+	position: absolute
+	top: 3px
+	right: 44px
+	background: #FFB500
+	padding: 1px 11px
+	z-index: 10
+	+transition(all 0.3s ease)
+	+border-radius(30px)
+	color: $c-white
+	width: 104px
+	&:before
+		content: " "
+		position: absolute
+		top: 6px
+		right: -2px
+		+transform(rotate(135deg))
+		width: 10px
+		z-index: 0
+		min-height: 10px
+		background: #FFB500
+
+.kbase-tooltip:hover .tooltip
+	opacity: 1
+	visibility: visible

@@ -82,6 +82,12 @@ $c-orange: #FF9000
 .bg-blue
 	background: $c-blue
 
+.bg-light-blue
+	background: $c-light-blue
+
+.bg-soft-blue
+	background: $c-cornflower
+
 .bg-orange
 	background: $c-orange
 
@@ -90,9 +96,6 @@ $c-orange: #FF9000
 
 .bg-purple
 	background: $c-purple
-
-.bg-light-blue
-	background: $c-light-blue
 
 .bg-light-gray
 	background: $c-lighter-gray
@@ -105,6 +108,9 @@ $c-orange: #FF9000
 
 .bg-grayx1
 	background-color: $c-latest-gray-ever
+
+.bg-gray-input
+	background-color: $c-input-gray
 
 .bg-cyan
 	background-color: $c-cyan
@@ -384,6 +390,9 @@ h3
 .align-middle
 	vertical-align: middle!important
 
+.is-align-bottom
+	vertical-align: bottom!important
+
 .c-center
 	margin: 0 auto
 
@@ -416,6 +425,9 @@ h3
 
 .border-bottom-gray
 	border-bottom: 2px solid $c-light-gray
+
+.border-left-gray
+	border-left: 2px solid $c-light-gray
 
 .border-top-gray
 	border-top: 2px solid $c-light-gray
@@ -545,6 +557,9 @@ input.serif, select.serif, textarea.serif
 
 .textarea-input-x1
 	min-height: 203px
+
+.input-x1.bg-gray-input
+	background: $c-input-gray!important
 
 .input-x1
 	padding: 0.35em 1em!important
@@ -730,6 +745,18 @@ input[type="submit"].login-btn
 .input.success
 	color: $c-dark-purple!important
 	border: 2px solid $c-green!important
+
+.is-append
+	position: relative
+	.txt
+		position: absolute
+		display: inline-block
+		left: 0
+		top: 9px
+	.is-input
+		width: 90%
+		margin-left: 10%
+		display: inline-block
 
 .help
 	font-size: 14px

@@ -458,6 +458,30 @@ footer, .full-menu-modal .top-content
 			right: 48px
 			width: 80%
 
+// COHORT PAGE
+.investment-list
+	table
+		width: 100%
+	table tr
+		color: $c-dark-purple
+	table td
+		display: block
+		padding: 10px 20px
+		vertical-align: middle
+		width: 100%
+	@media (min-width: $phone_b)
+		table td
+			display: table-cell
+			width: 25%
+		table thead td
+			padding: 25px 20px
+		table tbody td
+			padding: 25px 20px
+		table tbody td:nth-child(2)
+			text-align: right
+		table tbody td:first-child
+			border-right: 2px solid $c-input-gray
+
 
 // REUSABLE ELEMENTS //
 // BLUE COMMENTS
@@ -872,7 +896,7 @@ footer, .full-menu-modal .top-content
 	&::-webkit-scrollbar-thumb:window-inactive
 		background: rgba(41, 36, 78, 0.25)
 
-
+// DROPDOWN MENU
 .has-dropdown-menu
 	position: relative
 	float: left
@@ -903,3 +927,39 @@ footer, .full-menu-modal .top-content
 		border-right: 4px solid transparent
 		border-bottom: 8px solid #29244E
 		z-index: 1
+
+// ACCORDION: TOGGLE TEXT
+.toggle-txt
+	.title
+		cursor: pointer
+	.txt
+		margin-top: 30px
+		display: none
+		height: 0
+
+.toggle-txt.active
+	.txt
+		display: inline-block
+		height: auto
+
+// CIRCLE BULLET
+.icon-circle-x1
+	padding-left: 50px
+	.icon-cir
+		position: absolute
+		left: 0px
+		top: 3px
+	.is-bullet-circle
+		+border-radius(30px)
+		line-height: 27px
+		color: $c-white
+		text-align: center
+		width: 28px
+		height: 28px
+		background-color: $c-cornflower
+	.icon-cir
+		position: absolute
+		left: 0px
+		top: 3px
+	@media (min-width: $phone_b)
+		padding-left: 70px

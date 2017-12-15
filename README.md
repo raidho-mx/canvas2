@@ -152,3 +152,12 @@ http://testbed.raidho.mx/canvas2/trl6.html
 ## SCALING UP OVERVIEW
 
 http://testbed.raidho.mx/canvas2/scaling-up-overview.html
+
+
+## INCUBATION
+
+http://testbed.raidho.mx/canvas2/incubation-stages.html
+
+http://testbed.raidho.mx/canvas2/incubation-acceleration-empty.html
+
+http://testbed.raidho.mx/canvas2/incubation-acceleration-full.html
