@@ -3300,11 +3300,12 @@ footer, .full-menu-modal .top-content {
   vertical-align: middle;
   width: 100%; }
 @media (min-width: 600px) {
+  .investment-list .title {
+    top: -20px;
+    position: absolute; }
   .investment-list table td {
     display: table-cell;
     width: 25%; }
-  .investment-list table thead td {
-    padding: 25px 20px; }
   .investment-list table tbody td {
     padding: 25px 20px; }
   .investment-list table tbody td:nth-child(2) {
